@@ -1,0 +1,84 @@
+<div which_page="2" hidden="true"></div> <!--Which menu to highlight-->
+
+<div class="ui center aligned container">
+  <div class="ui  segment raised" id="users-container">
+    <%= image_tag("SOTS.jpg") %>
+
+    <h2 class="ui grey inverted icon ">
+      <i class="circular small  users icon"></i>
+      SOTS Members
+    </h2>
+
+    <div class="ui container">
+      <div class="ui segment inverted blue">
+        <div class="ui left aligned three column grid" id="user-grid">
+          <div class=" column ">
+            <h4>
+              <%= image_tag("flag-icon.png", class: "ui avatar image") %>
+              Name
+            </h4>
+          </div>
+          <div class="column">
+            <h4>
+              <i class="mail icon"></i>
+              Email Address
+            </h4>
+          </div>
+          <div class="column">
+            <h4>
+              <i class="music icon"></i>
+              Section
+            </h4>
+          </div>
+          <!--<div id="thin" class="one column row thin">-->
+            <!--<div class="column">-->
+              <!--<div class="ui divider"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+        </div>
+      </div>
+
+      <div class="ui left aligned three column grid" id="user-grid">
+
+        <% @users.each do |user| %>
+          <div class="column">
+            <!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+            <%= gravatar_for user %>
+            <a href="/users/<%= user.id %>"><%= user.name %></a>
+
+          </div>
+          <div class="column">
+            <i class="mail icon"></i>
+            <%= user.email %>
+          </div>
+          <div class="column">
+            <i class="music icon"></i>
+            <%= user.voice %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Helen</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Christian</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Daniel</div>-->
+<!--</div>-->
+<!--</div>-->
+
+

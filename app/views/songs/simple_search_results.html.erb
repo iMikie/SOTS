@@ -1,0 +1,13 @@
+<!--<div class="tablediv">-->
+  <!--<table class="resource_table">-->
+    <!--<tr class="song-heading"></tr>-->
+
+
+    <% @songs.each do |song| %>
+      <%= render partial: "simple_song",
+                 :locals => {title: song.title, :song_id => song.id, :composer => song.composer, :arranger_one => song.arranger_one, :song_number => song.song_number, :performance_id => @performance_id} %>
+    <% end %>
+
+
+  <!--</table>-->
+<!--</div>-->

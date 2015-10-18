@@ -1,0 +1,10 @@
+*.psd
+*.pdf
+*.mp3
+/test
+/spec
+/log
+/mobile
+/wireframe
+/mobile
+/public/SOTS_Songs

@@ -1,0 +1,118 @@
+<form id="user-edit-box" class="ui form <%= colorization %> segment raised <%= if @user.errors.any? then 'error' end %> "
+      action=<%= action_path %>
+      accept-charset="UTF-8" method= <%= method %> >
+
+
+  <!--ERROR MESSAGE <DIV>-->
+  <%= render 'error_messages' %>
+
+  <h3 class="ui dividing header"><%= title %></h3>
+  <% hidden_method_tag %>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input placeholder="Name" name="user[name]" value="<%= @user.name %>" type="text" <%= readonly %>>
+    </div>
+
+    <div class="field">
+      <label>SOTS Role</label>
+
+      <div class="ui selection dropdown">
+        <input type="hidden" name="user[voice]" value="<%= @user.voice %>" <%= readonly %>>
+
+        <div class="default text"> <%= @user.voice || "Bargain Counter Tenor" %> </div>
+        <i class="dropdown icon"></i>
+
+        <div class="menu">
+          <div class="item" data-value="Tenor 1">
+            <i class="small music icon"></i>
+            Tenor 1
+          </div>
+          <div class="item" data-value="Tenor 2">
+            <i class="music icon"></i>
+            Tenor 2
+          </div>
+          <div class="item" data-value="Baritone">
+            <i class="music icon"></i>
+            Baritone
+          </div>
+          <div class="item" data-value="Bass">
+            <i class="large music icon"></i>
+            Bass
+          </div>
+          <div class="item" data-value="Director">
+            <i class="small music icon"></i>
+            Director
+          </div>
+          <div class="item" data-value="Musician">
+            <i class="small music icon"></i>
+            Musician
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="two fields">
+    <div class="required field">
+      <label>Username</label>
+      <input placeholder="Username" name="user[username]" <%= readonly %> value="<%= @user.username %>" type="text">
+    </div>
+    <div class="required field">
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" name="user[email]" <%= readonly %> value="<%= @user.email %>">
+    </div>
+  </div>
+
+  <div class="two fields">
+    <div class=" field">
+      <label>Phone number</label>
+      <input placeholder="415 555-1212" name="user[phone_number]" <%= readonly %> value="<%= @user.phone_number %>" type="text">
+    </div>
+    <div class="item" id="gravatar_150">
+      <%= if @user.email then gravatar_for(@user, 150) end %>
+    </div>
+  </div>
+
+  <% if @user.name.nil? %>
+    <div class="two fields">
+      <div class="required field">
+        <label>Password</label>
+        <input type="password" placeholder="password" name="user[password]">
+      </div>
+      <div class="required field">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="confirm password" name="password-confirm">
+      </div>
+    </div>
+  <% end %>
+
+  <% if readonly.empty? %>
+    <button class="ui button red icon labeled" type="submit">
+      <i class="icon edit"></i>
+      Submit
+    </button>
+    <button class="ui labeled  icon button grey">
+      <a href="/users/<%= @user.id %>">
+        Cancel
+      </a>
+      <i class="edit icon"></i>
+    </button>
+    <button class="ui labeled  icon button violet">
+      <a href= "/users/change_password/<%= @user.id %>">
+        Change Password
+      </a>
+      <i class="edit icon"></i>
+    </button>
+  <% else %>
+    <button class="ui labeled  icon button green">
+      <a href="<%= edit_user_path %> ">
+        Edit
+      </a>
+      <i class="edit icon"></i>
+    </button>
+  <% end %>
+</form>

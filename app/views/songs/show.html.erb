@@ -1,0 +1,183 @@
+<div id="song-container">
+  <% if @song.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+      <ul>
+        <% @song.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div id="left-column">
+    <div class="page-title">Song Information:</div>
+    <% if @song.title %>
+      <div class="song-edit-div">
+        <span class="song-label"> Song Title: </span><br>
+        <span class="song-noedit-field bold-title"> <%= @song.title %></span>
+        <br>
+      </div>
+    <% end %>
+
+    <% if @song.composer %>
+      <div class="song-edit-div">
+        <span class="song-label"> Composer: </span><br>
+        <span class="song-noedit-field"><%= @song.composer %></span>
+      </div>
+    <% end %>
+
+    <% if !(@song.voicing.nil? || @song.voicing.empty?) %>
+      <div class="song-edit-div" id="song-voicing-div">
+        <span class="song-label"> Voicing: </span><br>
+        <span class="song-noedit-field "> <%= @song.voicing %></span>
+      </div>
+    <% end %>
+
+    <% if !(@song.category.nil? || @song.category.empty?) %>
+      <div class="song-edit-div" id="song-category-div">
+        <span class="song-label"> Category: </span><br>
+        <span class="song-noedit-field "> <%= @song.category %></span>
+      </div>
+    <% end %>
+
+    <% if !(@song.larger_work.nil? || @song.larger_work.empty?) %>
+      <div class="song-edit-div" id="song-larger-work-div">
+        <span class="song-label"> Larger Work: </span><br>
+        <span class="song-noedit-field "> <%= @song.larger_work %></span>
+      </div>
+    <% end %>
+
+    <% if !(@song.arranger_one.nil? || @song.arranger_one.empty?) %>
+      <div class="song-edit-div" id="song-arranger-one-div">
+        <span class="song-label"> First Arranger: </span><br>
+        <span class="song-noedit-field "> <%= @song.arranger_one %></span>
+      </div>
+    <% end %>
+
+    <% if !(@song.arranger_two.nil? || @song.arranger_two.empty?) %>
+      <div class="song-edit-div" id="song-arranger-two-div">
+        <span class="song-label"> Second Arranger: </span><br>
+        <span class="song-noedit-field "> <%= @song.arranger_two %></span>
+      </div>
+    <% end %>
+
+    <% if @song.song_number %>
+      <div class="song-edit-div" id="song-number-div">
+        <span class="song-label"> Mike's debugging only, File Number: </span><br>
+        <span class="song-noedit-field "> <%= @song.song_number %></span>
+      </div>
+    <% end %>
+
+    <div id="button-pod">
+      <%= link_to 'Back', songs_path, class: "blue-button simple-button back-button-pos" %><br>
+      <%= link_to 'Edit', edit_song_path, class: "green-button simple-button edit-button-pos", id: "edit-song" %><br>
+      <%= link_to 'Delete', @song, method: :delete, data: {confirm: 'Confirm delete: '}, class: "red-button
+    simple-button delete-button-pos", id: "song-delete" %>
+    </div>
+  </div>
+
+  <!-- end left-column , start edit version of same column-->
+  <div id="left-edit-column">
+    <div class="page-title">Song Information:</div>
+
+    <div class="form-container ">
+      <%= form_for @song do |f| %>
+
+        <!--Song Title-->
+        <div class="song-edit-div">
+          <%= f.label :title, 'Song Title:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :title, class: "song-edit-field bold-title", value: @song.title %>
+        </div>
+
+        <!--Composer-->
+        <div class="song-edit-div">
+          <%= f.label :composer, 'Composer:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :composer, class: "song-edit-field", value: @song.composer %>
+        </div>
+
+        <!--Voicing-->
+        <div class="song-edit-div" id="song-voicing-div">
+          <%= f.label :voicing, 'Voicing:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :voicing, class: "song-edit-field", value: @song.voicing %>
+        </div>
+
+        <!--Category-->
+        <div class="song-edit-div" id="song-category-div">
+          <%= f.label :category, 'Category:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :category, class: "song-edit-field", value: @song.category %>
+        </div>
+
+        <!--Larger Work-->
+        <div class="song-edit-div" id="song-larger-work-div">
+          <%= f.label :larger_work, 'Larger Work:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :larger_work, class: "song-edit-field", value: @song.larger_work %>
+
+        </div>
+
+        <!--First Arranger-->
+        <div class="song-edit-div" id="song-arranger-one-div">
+          <%= f.label :arranger_one, 'First Arranger:', class: "song-label" %>
+          <br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :arranger_one, class: "song-edit-field", value: @song.arranger_one %>
+        </div>
+
+        <!--Second Arranger-->
+        <div class="song-edit-div" id="song-arranger-two-div">
+          <%= f.label :arranger_two, 'Second Arranger:', class: "song-label" %>
+          <br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :arranger_two, class: "song-edit-field", value: @song.arranger_two %>
+        </div>
+        <br>
+        <!--PDF-->
+        <div class="song-edit-div pdf-pos">
+          <%= f.label :song_file, 'Select Sheet Music PDF File:', class: "song-label" %>
+          <br>
+          <%= f.file_field :pdf_file %>
+        </div>
+
+        <!--MP3-->
+        <div class="song-edit-div">
+          <%= f.label :song_file, 'Select MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :mp3_file %>
+        </div>
+
+        <%= f.hidden_field :song_number %>
+
+        <div class="actions">
+          <%= f.submit class: "green-button simple-button submit-song", value: 'Submit Song' %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="edit-button-pod">
+      <%= link_to 'Cancel', songs_path, class: "blue-button simple-button cancel-button-pos", id: "cancel-edit-song" %>
+      <br>
+    </div>
+  </div>
+  <!-- end of left-edit-column-->
+  <div class="pdf-right-column">
+    <!--<#% path = Rails.root.join("public", "SOTS_Songs", "#{@song.song_number}").to_s %>-->
+    <% if url_exist?(@amazonAWS_path + ".mp3") %>
+
+    <!--<#% if File.exist?(path+".mp3") %>-->
+      <audio src="<%= @amazonAWS_path %>.mp3" class="mp3-pos" type="audio/mpeg" controls>
+        Your browser does not support the audio element.
+      </audio>
+    <% end %>
+    <!--<#% if File.exist?(path+".pdf") %>-->
+      <% if url_exist?(@amazonAWS_path + ".pdf") %>
+      <iframe src="<%= @amazonAWS_path %>.pdf" class="pdf">
+      </iframe>
+    <% end %>
+
+  </div>
+</div>

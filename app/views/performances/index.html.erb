@@ -1,0 +1,143 @@
+
+<div which_page="2" hidden="true"></div> <!--Which menu to highlight-->
+
+<div class="ui center aligned container">
+  <div class="ui  segment raised" id="users-container">
+
+    <h2 class="ui blue inverted  icon header">
+      <i class="circular   users icon"></i>
+      SOTS Performances
+    </h2>
+
+    <div class="ui container">
+      <div class="ui segment inverted blue">
+        <div class="ui left aligned three column grid" id="user-grid">
+          <div class=" column ">
+            <h4>
+              Performance
+            </h4>
+          </div>
+          <div class="column">
+            <h4>
+              <i class="mail icon"></i>
+              Date
+            </h4>
+          </div>
+          <div class="column">
+            <h4>
+              <i class="music icon"></i>
+              Event Leader
+            </h4>
+          </div>
+          <!--<div id="thin" class="one column row thin">-->
+          <!--<div class="column">-->
+          <!--<div class="ui divider"></div>-->
+          <!--</div>-->
+          <!--</div>-->
+        </div>
+      </div>
+
+      <div class="ui left aligned three column grid" id="user-grid">
+
+        <% @performances.each do |performance| %>
+          <div class="column">
+            <i class="music icon"></i>
+
+            <a href="/performances/<%= performance.id %>"> <%= performance.title %></a>
+
+          </div>
+          <div class="column">
+            <i class="calendar icon"></i>
+            <%= performance.date %>
+          </div>
+          <div class="column">
+            <i class="user icon"></i>
+            <%= performance.event_leader %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Helen</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Christian</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="item">-->
+<!--<#%= image_tag("flag-icon.png", class: "ui avatar image") %>-->
+<!--<div class="content">-->
+<!--<div class="header">Daniel</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+<!--<div class="performance-title-block">-->
+
+  <!--<p id="notice"><#%= notice %></p>-->
+
+  <!--<h3 class="resource-title">Performances</h3>-->
+
+  <!--<p class="resource-instructions">Select a performance, download the music,-->
+    <!--check out recordings of that performance.-->
+  <!--</p>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div class="performance-table-div">-->
+
+  <!--<table class="performances-table">-->
+
+    <!--&lt;!&ndash;<thead>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Title</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Date</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Performance time</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Call time</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Location</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Event leader</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th>Leader phone</th>&ndash;&gt;-->
+    <!--&lt;!&ndash;<th colspan="2"></th>&ndash;&gt;-->
+    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+    <!--&lt;!&ndash;</thead>&ndash;&gt;-->
+
+    <!--<tbody>-->
+    <!--<%#= link_to 'New Performance', new_performance_path, class: "blue-button simple-button new-performance-button-pos" %>-->
+    <!--<br>-->
+
+    <!--<br>-->
+    <!--<#% @performances.each do |performance| %>-->
+      <!--<tr>-->
+        <!--<td> <#%= link_to performance.title, performance_path(performance), class: "performance-table-title" %></td>-->
+        <!--<td class="performance-table-date"><#%= performance.date %></td>-->
+        <!--&lt;!&ndash;<td><#%= performance.performance_time %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= performance.call_time %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= performance.location %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= performance.event_leader %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= performance.leader_phone %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= link_to 'Show', performance %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= link_to 'Edit', edit_performance_path(performance) %></td>&ndash;&gt;-->
+        <!--&lt;!&ndash;<td><#%= link_to 'Destroy', performance, method: :delete, data: { confirm: 'Are you sure?' } %></td>&ndash;&gt;-->
+      <!--</tr>-->
+    <!--<#% end %>-->
+    <!--</tbody>-->
+  <!--</table>-->
+<!--</div>-->
+
+

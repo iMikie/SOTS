@@ -1,0 +1,26 @@
+<nav>
+  <ul>
+    <li><a href="#">Music</a>
+      <ul>
+        <li> <%= link_to "Sheet Music Library", songs_path %> </li>
+        <li><%= link_to 'New Song', new_song_path %></li>
+      </ul>
+    </li>
+    <li><a href="#">Performances</a>
+      <ul>
+        <li><%= link_to 'View Performances', performances_path %></li>
+        <li><%= link_to 'New Performance', new_performance_path %></li>
+      </ul>
+    <li><a href="#">SOTS</a>
+      <ul>
+        <li><%= link_to 'Members', users_path %></li>
+        <li><a href="/users/<%= session[:current_user_id] %>/edit">Edit Profile</a></li>
+      </ul>
+      <% if session[:current_user_id] %>
+      <li><a href="/logout">Logout</a></li>
+    <% else %>
+      <li><%= link_to "Login", login_path %> </li>
+      <li><%= link_to "Signup", new_user_path %> </li>
+    <% end %>
+  </ul>
+</nav>

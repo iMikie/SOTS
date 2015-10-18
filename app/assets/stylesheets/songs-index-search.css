@@ -1,0 +1,57 @@
+/*CSS for the song index and search page */
+
+.song_search {
+    padding-left: 24px;
+    /*margin-bottom: 2em;*/
+    /*margin-left: 12px;*/
+    margin: auto;
+    padding-top: 1.5em;
+    width: 1045px;
+    height: 90px;
+    background-color: #EEEEEE;
+    color: #15355a;
+    font: bold 12px Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    /*border-bottom: 5px solid #bbbbbb;*/
+}
+
+.search-row-height {
+    height: 20px;
+    margin: -1px;
+}
+.title-edit {
+    width: 250px;
+}
+.composer-edit {
+    width: 175px;
+}
+.voicing-edit {
+    width: 45px;
+}
+.category-edit {
+    width: 160px;
+}
+.larger-work-edit {
+    width: 100px;
+}
+.arranger-one-edit {
+    width: 100px;
+}
+.arranger-two-edit {
+    width: 100px;
+}
+.PDF {
+    width: 120px;
+}
+.search-button {
+    position: relative;
+    text-decoration: none;
+    margin-left: 14em;
+    top: -2em;
+}
+.song-heading {
+    background: #efefef;
+    text-align: left;
+    list-style: none;
+}

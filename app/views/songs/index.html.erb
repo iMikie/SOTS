@@ -1,0 +1,43 @@
+<div class="page_container">
+  <h3 class="resource-title">Searching for Songs</h3>
+
+  <p class="resource-instructions">Results will match all the criteria you enter.  Searching is not case sensitive and partial strings are OK.  Example: typing <span class="italic">noel</span> for Title and
+    <span class="italic">johnson</span> for Composer field will return only
+    <span class="italic">African Noel</span> by Johnson.
+  </p>
+  <br>
+
+  <div class="song_search">Search for Music
+    <%= form_tag '/songs/search' do %>
+      <%= submit_tag 'Search', class: "blue-button simple-button search-button" %>
+      <br>
+
+      <%= text_field_tag 'title', nil, class: "title-edit search-row-height", placeholder: "Title" %>
+      <%= text_field_tag 'composer', nil, class: 'composer-edit search-row-height', placeholder: "Composer" %>
+      <%= text_field_tag 'voicing', nil, class: 'voicing-edit search-row-height', placeholder: "Voices" %>
+      <%= text_field_tag 'category', nil, class: 'category-edit search-row-height', placeholder: "Category" %>
+      <%= text_field_tag 'larger_work', nil, class: 'larger-work-edit search-row-height', placeholder: "Larger Work" %>
+      <%= text_field_tag 'arranger_one', nil, class: 'arranger-one-edit search-row-height', placeholder: "Arranger One" %>
+      <%= text_field_tag 'arranger_two', nil, class: 'arranger-two-edit search-row-height', placeholder: "Arranger Two" %>
+
+    <% end %>
+  </div>
+
+  <div class="tablediv">
+    <table class="resource_table">
+      <tr class="song-heading"></tr>
+
+
+      <% @songs.each do |song| %>
+        <%= render partial: "song",
+                   :locals => {title: song.title, :song_id => song.id, :composer => song.composer,
+                               :larger_work => song.larger_work, :voicing => song.voicing,
+                               :category => song.category, :larger_work => song.larger_work,
+                               :arranger_one => song.arranger_one, :arranger_two => song.arranger_two,
+                               :song_number => song.song_number} %>
+      <% end %>
+
+
+    </table>
+  </div>
+</div>

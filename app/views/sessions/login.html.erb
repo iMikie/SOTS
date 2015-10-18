@@ -1,0 +1,89 @@
+<div id="login-box" class="ui segment">
+  <button class="ui right floated labeled  icon button blue">
+
+    <a href=" <%= "#{new_user_path}" %> ">
+      Go to New User Signup
+    </a>
+    <i class="right arrow icon"></i>
+
+  </button>
+  <br>
+  <br>
+
+  <form action=<%= login_path %> class="ui form segment raised <%= if @error then
+                                                                     'error'
+                                                                   end %> " method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <div class="ui error message">
+    <div class="header">Login error:</div>
+    <ul class="list">
+      <li>If you haven't signed up yet, click the signup button.</li>
+      <li>Otherwise, try again</li>
+    </ul>
+  </div>
+
+  <h3 class="ui dividing header ">Member Login</h3>
+
+
+  <div class="field">
+    <label>Username</label>
+    <input type="text" name="username" placeholder="Username">
+  </div>
+  <div class=" field">
+    <label>Password
+    <%= link_to "(forgot password)", password_resets_new_path %></label>
+
+    <input type="password" name="password" placeholder="Password">
+  </div>
+
+    <div class="ui  checkbox">
+      <input type="checkbox" name="remember_me">
+      <label>Remember me on this machine</label>
+    </div>
+  <br>
+  <br>
+  <!--<#%= f.label :remember_me, class: "checkbox inline" do %>-->
+  <!--<#%= f.check_box :remember_me %>-->
+  <!--<span>Remember me on this computer</span>-->
+  <!--<#% end %>-->
+
+<button class="ui button red icon labeled" type="submit">
+  <i class="icon edit"></i>
+  Login
+</button>
+<!--<button class="ui button grey icon labeled">-->
+  <!--<a href=" <#%= users_forgot_password_path %> "></a>-->
+
+  <!--<i class="icon privacy"></i>-->
+  <!--Forgot Password-->
+<!--</button>-->
+
+</form>
+
+<br>
+</div>
+
+
+<!--This is how to do it with form_tag, but without Semantic_UI -->
+<!--<div class="center-container">-->
+<!--<div class="input_box">-->
+<!--<#% if @error %>-->
+<!--<p class="error"><%#= @error %></p>-->
+<!--<#% end %>-->
+
+<!--<div class="dbox_title">Member Login</div>-->
+<!--<br>-->
+
+
+<!--<#%= form_tag '/login' do %>-->
+<!--  <%#= text_field_tag 'username' ,nil, class:"login_field",placeholder:"Username"  %><br>-->
+
+<!--<#%= password_field_tag 'password', nil, class: "login_field", placeholder: "Password" %>-->
+<!--<#%= submit_tag 'Submit', class: 'abut' %>-->
+
+<!--<#% end %>-->
+<!--<br>-->
+<!--<#%= link_to "Signup", new_user_path %>-->
+<!--</div>-->
+<!--</div>-->

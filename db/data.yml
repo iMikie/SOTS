@@ -1,0 +1,4862 @@
+
+---
+performances:
+  columns:
+  - id
+  - title
+  - date
+  - performance_time
+  - call_time
+  - location
+  - event_leader
+  - leader_phone
+  - created_at
+  - updated_at
+  records: 
+  - - '73'
+    - Christmas Members Show
+    - '2015-12-12'
+    - '20:00:00'
+    - '17:30:00'
+    - "     At the Club: main show in the Golden Gate room,  dinner show in the Starting
+      line. "
+    - Herb Goodrich
+    - ''
+    - '2015-10-12 06:29:16.715168'
+    - '2015-10-12 19:34:45.350091'
+
+---
+performance_songs:
+  columns:
+  - id
+  - performance_id
+  - song_id
+  - created_at
+  - updated_at
+  records: 
+  - - '7'
+    - '1'
+    - '416'
+    - '2015-10-07 01:30:32.534845'
+    - '2015-10-07 01:30:32.534845'
+  - - '8'
+    - '73'
+    - '17'
+    - '2015-10-12 19:35:37.464363'
+    - '2015-10-12 19:35:37.464363'
+  - - '9'
+    - '73'
+    - '435'
+    - '2015-10-12 19:39:35.173026'
+    - '2015-10-12 19:39:35.173026'
+  - - '10'
+    - '73'
+    - '340'
+    - '2015-10-12 19:39:50.685814'
+    - '2015-10-12 19:39:50.685814'
+  - - '11'
+    - '73'
+    - '434'
+    - '2015-10-12 19:40:13.422127'
+    - '2015-10-12 19:40:13.422127'
+
+---
+songs:
+  columns:
+  - id
+  - song_number
+  - title
+  - composer
+  - larger_work
+  - arranger_one
+  - arranger_two
+  - voicing
+  - category
+  - created_at
+  - updated_at
+  records: 
+  - - '2'
+    - '298'
+    - African Noel
+    - Johnson
+    - ''
+    - ''
+    - ''
+    - ''
+    - Christmas
+    - '2015-07-08 20:34:35.581447'
+    - '2015-08-11 21:16:23.318978'
+  - - '3'
+    - '200'
+    - Ain-a That Good News
+    - Dawson, W.
+    - 
+    - 
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:35.583188'
+    - '2015-07-08 20:34:35.583188'
+  - - '4'
+    - '237'
+    - Ain't Misbehavin
+    - Richardson
+    - 
+    - 
+    - 
+    - 
+    - Broadway Musical
+    - '2015-07-08 20:34:35.58474'
+    - '2015-07-08 20:34:35.58474'
+  - - '5'
+    - '316'
+    - Alexander's Ragtime Band
+    - Berlin/Hood
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.586164'
+    - '2015-07-08 20:34:35.586164'
+  - - '6'
+    - '22'
+    - Alfred Burt Carols Volume 1 Caroling, Caroling
+    - Alfred Burt
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.587627'
+    - '2015-07-08 20:34:35.587627'
+  - - '7'
+    - '191'
+    - All the things you are
+    - Rogers, J
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.589286'
+    - '2015-07-08 20:34:35.589286'
+  - - '8'
+    - '159'
+    - All Those In Favor Of Having A Drink
+    - Joe Allen
+    - 
+    - 
+    - 
+    - TTBB
+    - SOTS Drinking Song
+    - '2015-07-08 20:34:35.59079'
+    - '2015-07-08 20:34:35.59079'
+  - - '9'
+    - '152'
+    - Alleluia
+    - THOMPSON, R.
+    - 
+    - THOMPSON, R.
+    - THOMPSON, R.
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.592335'
+    - '2015-07-08 20:34:35.592335'
+  - - '10'
+    - '380'
+    - Amazed
+    - Green, Marv
+    - 
+    - 
+    - 
+    - TBB
+    - Cowboy Song Western
+    - '2015-07-08 20:34:35.593963'
+    - '2015-07-08 20:34:35.593963'
+  - - '11'
+    - '2'
+    - Amazing Grace
+    - COATES
+    - 
+    - COATES, J.
+    - 
+    - TTBB
+    - Scotish Folk Hymn
+    - '2015-07-08 20:34:35.595419'
+    - '2015-07-08 20:34:35.595419'
+  - - '12'
+    - '183'
+    - Amen
+    - Hairston
+    - 
+    - 
+    - 
+    - T-TTBB
+    - Christmas Spiritual
+    - '2015-07-08 20:34:35.596945'
+    - '2015-07-08 20:34:35.596945'
+  - - '13'
+    - '235'
+    - America the Beautiful
+    - Ward/Spebsqua
+    - 
+    - 
+    - 
+    - 
+    - Patriotic
+    - '2015-07-08 20:34:35.598356'
+    - '2015-07-08 20:34:35.598356'
+  - - '14'
+    - '3'
+    - America, The Beautiful
+    - Jack Rogers
+    - 
+    - Rogers
+    - 
+    - TB
+    - Patriotic
+    - '2015-07-08 20:34:35.599979'
+    - '2015-07-08 20:34:35.599979'
+  - - '15'
+    - '4'
+    - Anchor's Aweigh
+    - Arr. Zimmerman
+    - 
+    - 
+    - Lottman
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.601518'
+    - '2015-07-08 20:34:35.601518'
+  - - '16'
+    - '201'
+    - Anchor's Aweigh
+    - "/Allen "
+    - ''
+    - Allen, J.
+    - ''
+    - TTBB
+    - Chantey Patriotic
+    - '2015-07-08 20:34:35.60315'
+    - '2015-08-06 04:20:52.783182'
+  - - '17'
+    - '321'
+    - Angels We Have Heard on High
+    - " Richard Evans"
+    - ''
+    - ''
+    - ''
+    - ''
+    - Christmas
+    - '2015-07-08 20:34:35.604576'
+    - '2015-10-05 23:55:10.601625'
+  - - '18'
+    - '271'
+    - April Showers
+    - Silvers/Stickles
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.605845'
+    - '2015-07-08 20:34:35.605845'
+  - - '19'
+    - '357'
+    - Aquarius, Let the Sunshine In
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.607094'
+    - '2015-07-08 20:34:35.607094'
+  - - '20'
+    - '5'
+    - A-Roving
+    - Robert Ton
+    - 
+    - LUBOFF, N.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.608538'
+    - '2015-07-08 20:34:35.608538'
+  - - '21'
+    - '7'
+    - Art of the Ground Round
+    - BACH, P.D.Q.
+    - 
+    - SCHICKELE, P.
+    - SCHICKELE, P.
+    - 3 part
+    - Parody on Bach
+    - '2015-07-08 20:34:35.609766'
+    - '2015-07-08 20:34:35.609766'
+  - - '22'
+    - '358'
+    - As I walked through the meadows
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Scotish Folk Song
+    - '2015-07-08 20:34:35.61122'
+    - '2015-07-08 20:34:35.61122'
+  - - '23'
+    - '202'
+    - At The River
+    - Copland, A.
+    - 
+    - Wilding-White, R.
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.612699'
+    - '2015-07-08 20:34:35.612699'
+  - - '24'
+    - '236'
+    - Aura Lee
+    - Spebsqua
+    - 
+    - 
+    - 
+    - 
+    - English Folk Song
+    - '2015-07-08 20:34:35.614463'
+    - '2015-07-08 20:34:35.614463'
+  - - '25'
+    - '258'
+    - Autumn Leaves
+    - "/Reed"
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.615837'
+    - '2015-07-08 20:34:35.615837'
+  - - '26'
+    - '83'
+    - Away to Rio!
+    - Bartholomew
+    - 
+    - BARTHOLOMEW, M.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.617182'
+    - '2015-07-08 20:34:35.617182'
+  - - '27'
+    - '385'
+    - Ballad of Santy Anno
+    - Crocker, Emily
+    - 
+    - 
+    - 
+    - TTBB
+    - Ballad
+    - '2015-07-08 20:34:35.618789'
+    - '2015-07-08 20:34:35.618789'
+  - - '28'
+    - '23'
+    - Banjo Song, A
+    - Sidney Homer
+    - 
+    - 
+    - 
+    - TTBB
+    - Minstrel Song
+    - '2015-07-08 20:34:35.620352'
+    - '2015-07-08 20:34:35.620352'
+  - - '29'
+    - '262'
+    - Banks of Doon
+    - Mulholland/Goodrich
+    - 
+    - 
+    - 
+    - 
+    - Scotish Love Song
+    - '2015-07-08 20:34:35.621718'
+    - '2015-07-08 20:34:35.621718'
+  - - '30'
+    - '54'
+    - Battle Hymn Of The Republic
+    - STEFFE/Ringwald
+    - ''
+    - RINGWALD, R.
+    - HOWE, J.
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.623242'
+    - '2015-08-14 23:31:24.927984'
+  - - '32'
+    - '165'
+    - Be Still My Soul
+    - "Sibelius, J.\r"
+    - 
+    - Boustead
+    - Schleggl
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.626455'
+    - '2015-07-08 20:34:35.626455'
+  - - '33'
+    - '395'
+    - Beach Boys Car Tunes
+    - Wilson/Chin
+    - 
+    - 
+    - 
+    - TTB
+    - Pop
+    - '2015-07-08 20:34:35.628052'
+    - '2015-07-08 20:34:35.628052'
+  - - '34'
+    - '61'
+    - Blow the Man Down
+    - arr. Tolleson
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.629571'
+    - '2015-07-08 20:34:35.629571'
+  - - '35'
+    - '11'
+    - Boatmen's Dance (The)
+    - COPLAND, A. (ADPT.)
+    - 
+    - FINE, I.
+    - 
+    - TTBB
+    - WORK SONG
+    - '2015-07-08 20:34:35.631051'
+    - '2015-07-08 20:34:35.631051'
+  - - '36'
+    - '37'
+    - Book of Love
+    - Edwards/Lowjeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.632538'
+    - '2015-07-08 20:34:35.632538'
+  - - '37'
+    - '255'
+    - Cabaret
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Broadway Shpow
+    - '2015-07-08 20:34:35.633942'
+    - '2015-07-08 20:34:35.633942'
+  - - '38'
+    - '306'
+    - Call Me Irresponsible
+    - Cahn/Sterling
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.635695'
+    - '2015-07-08 20:34:35.635695'
+  - - '39'
+    - '19'
+    - Calypso Noel
+    - KRUNNFUSZ, G.
+    - 
+    - 
+    - KRUNNFUSZ, G.
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.637147'
+    - '2015-07-08 20:34:35.637147'
+  - - '40'
+    - '192'
+    - Cantate Domino (O Sing Unto The Lord)
+    - Hassler, H.
+    - 
+    - Greyson, N.
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.638771'
+    - '2015-07-08 20:34:35.638771'
+  - - '41'
+    - '392'
+    - Cape Cod Girls
+    - Crocker, Emily
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.640274'
+    - '2015-07-08 20:34:35.640274'
+  - - '42'
+    - '126'
+    - Captain Fate
+    - Schicklele
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.641567'
+    - '2015-07-08 20:34:35.641567'
+  - - '43'
+    - '15'
+    - Captain Stratton's Fancy
+    - TAYLOR, DEEMS
+    - 
+    - High
+    - MASEFIELD, J.
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.642912'
+    - '2015-07-08 20:34:35.642912'
+  - - '44'
+    - '239'
+    - Careless Love
+    - "/McLeod"
+    - 
+    - 
+    - 
+    - 
+    - Love Song
+    - '2015-07-08 20:34:35.644439'
+    - '2015-07-08 20:34:35.644439'
+  - - '45'
+    - '18'
+    - Carol of the Birds
+    - ARR. VICKERY
+    - 
+    - VICKERY
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.645838'
+    - '2015-07-08 20:34:35.645838'
+  - - '46'
+    - '6'
+    - Carol, Brothers, Carol
+    - RINGWALD, R.
+    - 
+    - 
+    - MUHLENBERG
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.647282'
+    - '2015-07-08 20:34:35.647282'
+  - - '47'
+    - '122'
+    - Caroling, Caroling
+    - Alfred Burt
+    - 
+    - ROSS, J.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.648561'
+    - '2015-07-08 20:34:35.648561'
+  - - '48'
+    - '21'
+    - Catches for 3, 4, & 5 Voices
+    - arr. Lawton
+    - 
+    - 
+    - 
+    - TTBB
+    - Catch
+    - '2015-07-08 20:34:35.649811'
+    - '2015-07-08 20:34:35.649811'
+  - - '49'
+    - '384'
+    - Celtic Hymn
+    - Roberton, Hugh
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.651094'
+    - '2015-07-08 20:34:35.651094'
+  - - '50'
+    - '0'
+    - Christmas in Song (Green Songbook Collection)
+    - 
+    - 
+    - Preuss, Theo.
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.652341'
+    - '2015-07-08 20:34:35.652341'
+  - - '51'
+    - '140'
+    - Christmas Song (Chestnuts)
+    - Torme/Ringwald
+    - 
+    - Ringold
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.653793'
+    - '2015-07-08 20:34:35.653793'
+  - - '52'
+    - '141'
+    - Christmas Song (Chestnuts)
+    - Torme/Boyden
+    - 
+    - Boyden
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.65505'
+    - '2015-07-08 20:34:35.65505'
+  - - '53'
+    - '179'
+    - Christmas Song (Chestnuts)
+    - Jack Rogers
+    - 
+    - Rogers, J.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.656284'
+    - '2015-07-08 20:34:35.656284'
+  - - '54'
+    - '178'
+    - Christmas Word Sheets
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.657474'
+    - '2015-07-08 20:34:35.657474'
+  - - '55'
+    - '368'
+    - Christopher and Me
+    - Donnelly
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.65871'
+    - '2015-07-08 20:34:35.65871'
+  - - '56'
+    - '185'
+    - Cigarettes, Whisky and Wild, Wild Women
+    - Spencer
+    - 
+    - 
+    - 
+    - Unison
+    - American Folk
+    - '2015-07-08 20:34:35.659946'
+    - '2015-07-08 20:34:35.659946'
+  - - '57'
+    - '266'
+    - Clancy Lowered the Boom
+    - Lang/Wilson
+    - 
+    - 
+    - 
+    - 
+    - Novelty
+    - '2015-07-08 20:34:35.667932'
+    - '2015-07-08 20:34:35.667932'
+  - - '58'
+    - '33'
+    - Climb Ev'ry Mountain
+    - RODGERS, R.
+    - 
+    - SMITH, C.
+    - HAMMERSTEIN, O
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.669569'
+    - '2015-07-08 20:34:35.669569'
+  - - '59'
+    - '211'
+    - Coffee Grows On White Oak Trees
+    - Ferguson
+    - 
+    - Ferguson, E.
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:35.67111'
+    - '2015-07-08 20:34:35.67111'
+  - - '60'
+    - '186'
+    - Cool Water
+    - Nolan, Bob
+    - 
+    - 
+    - 
+    - TTB
+    - Cowboy Song Western
+    - '2015-07-08 20:34:35.672438'
+    - '2015-07-08 20:34:35.672438'
+  - - '61'
+    - '109'
+    - Could I Ever Leave My San Francisco
+    - Clay Schmit
+    - 
+    - 
+    - 
+    - TTBB
+    - SOTS Irish
+    - '2015-07-08 20:34:35.67383'
+    - '2015-07-08 20:34:35.67383'
+  - - '62'
+    - '325'
+    - Coventry Carol
+    - Evans
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.675193'
+    - '2015-07-08 20:34:35.675193'
+  - - '63'
+    - '265'
+    - Danny Boy
+    - Schmit
+    - 
+    - 
+    - 
+    - 
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.676408'
+    - '2015-07-08 20:34:35.676408'
+  - - '64'
+    - '364'
+    - Dashing Through the Slush
+    - Hagemann
+    - 
+    - 
+    - 
+    - TTBB
+    - Novelty
+    - '2015-07-08 20:34:35.677596'
+    - '2015-07-08 20:34:35.677596'
+  - - '65'
+    - '301'
+    - Day-O
+    - "/Schmit"
+    - 
+    - 
+    - 
+    - 
+    - Jamaican Folk Song
+    - '2015-07-08 20:34:35.678686'
+    - '2015-07-08 20:34:35.678686'
+  - - '66'
+    - '32'
+    - Deck the Hall
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.679888'
+    - '2015-07-08 20:34:35.679888'
+  - - '67'
+    - '31'
+    - Deck the Halls
+    - arr. Heath
+    - 
+    - HEATH, F.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.681191'
+    - '2015-07-08 20:34:35.681191'
+  - - '68'
+    - '189'
+    - Don't Fence Me In
+    - Porter
+    - 
+    - Shaw, Kirby
+    - '0'
+    - TTBB
+    - Cowboy Song Western
+    - '2015-07-08 20:34:35.682476'
+    - '2015-07-08 20:34:35.682476'
+  - - '69'
+    - '382'
+    - Dream Baby
+    - Walker, Cindy
+    - 
+    - 
+    - 
+    - TTB
+    - Pop
+    - '2015-07-08 20:34:35.6837'
+    - '2015-07-08 20:34:35.6837'
+  - - '70'
+    - '35'
+    - Drink To Me Only With Thine EyesEYES
+    - arr. Ringwald
+    - 
+    - RINGWALD, R.
+    - JOHNSON, B.
+    - TTBB
+    - English Folk Song
+    - '2015-07-08 20:34:35.68495'
+    - '2015-07-08 20:34:35.68495'
+  - - '71'
+    - '36'
+    - Drinking Song
+    - ROMBERG
+    - 
+    - 
+    - ROMBERG
+    - TTBB
+    - Operetta / Drinking S
+    - '2015-07-08 20:34:35.686154'
+    - '2015-07-08 20:34:35.686154'
+  - - '72'
+    - '251'
+    - Du, Du, Liegst mir im Hertzen
+    - Shaw
+    - 
+    - 
+    - 
+    - 
+    - German Drinking Song
+    - '2015-07-08 20:34:35.687565'
+    - '2015-07-08 20:34:35.687565'
+  - - '73'
+    - '37'
+    - Duke of Earl
+    - Edwards/Lowjeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.688771'
+    - '2015-07-08 20:34:35.688771'
+  - - '74'
+    - '34'
+    - Earth Angel
+    - Williams/Emerson
+    - 
+    - Emerson
+    - Williams
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.689962'
+    - '2015-07-08 20:34:35.689962'
+  - - '75'
+    - '20'
+    - Easy Street
+    - Strouse
+    - 
+    - Metis
+    - Charnin
+    - TTBB
+    - Musical
+    - '2015-07-08 20:34:35.691234'
+    - '2015-07-08 20:34:35.691234'
+  - - '76'
+    - '84'
+    - Edelweiss
+    - RODGERS, R.
+    - 
+    - 
+    - HAMMERSTEIN, O.
+    - Unison
+    - Broadway Musical
+    - '2015-07-08 20:34:35.692554'
+    - '2015-07-08 20:34:35.692554'
+  - - '77'
+    - '248'
+    - Edelweiss
+    - Rodgers/Allen
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.693863'
+    - '2015-07-08 20:34:35.693863'
+  - - '78'
+    - '83'
+    - Eight Bells
+    - Bartholomew
+    - 
+    - BARTHOLOMEW, M.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.695016'
+    - '2015-07-08 20:34:35.695016'
+  - - '79'
+    - '363'
+    - Et in Terra Pax
+    - Vivaldi
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.696216'
+    - '2015-07-08 20:34:35.696216'
+  - - '80'
+    - '220'
+    - Evening Prayer, An
+    - M.GABRIEL/THORNE
+    - 
+    - THORNE, F.
+    - 'BATTERSBY, '
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.69738'
+    - '2015-07-08 20:34:35.69738'
+  - - '81'
+    - '134'
+    - Every Time I Feel the Spirit
+    - "/Clay Schmit"
+    - 
+    - McGilvray
+    - 
+    - ttbb
+    - Spiritual
+    - '2015-07-08 20:34:35.698591'
+    - '2015-07-08 20:34:35.698591'
+  - - '82'
+    - '320'
+    - Every Time We Say Goodbye
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Ballad
+    - '2015-07-08 20:34:35.699815'
+    - '2015-07-08 20:34:35.699815'
+  - - '83'
+    - '65'
+    - Falling in Love
+    - Rodgers
+    - 
+    - 
+    - 
+    - T-TTBB
+    - Musical
+    - '2015-07-08 20:34:35.701032'
+    - '2015-07-08 20:34:35.701032'
+  - - '84'
+    - '80'
+    - Falling in Love With Love
+    - RODGERS, R./Stickles
+    - 
+    - STICKLES, W.
+    - HART, L.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.702247'
+    - '2015-07-08 20:34:35.702247'
+  - - '85'
+    - '292'
+    - Fanfare for Christmas Day
+    - Martin Shaw
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.703508'
+    - '2015-07-08 20:34:35.703508'
+  - - '86'
+    - '79'
+    - Follow the Drinking Gourd
+    - "/Clark"
+    - 
+    - CLARK, K.
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:35.705123'
+    - '2015-07-08 20:34:35.705123'
+  - - '87'
+    - '205'
+    - Fugue For Tinhorns
+    - Loesser, F.
+    - 
+    - 
+    - 
+    - TTB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.706464'
+    - '2015-07-08 20:34:35.706464'
+  - - '88'
+    - '231'
+    - Gavotte for Bach
+    - Bach/Williams
+    - 
+    - 
+    - 
+    - 
+    - Baroque
+    - '2015-07-08 20:34:35.707649'
+    - '2015-07-08 20:34:35.707649'
+  - - '89'
+    - '194'
+    - Georgia On My Mind
+    - Carmichael, H./Allen
+    - 
+    - Allen, J.
+    - Gorrell, S.
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.708806'
+    - '2015-07-08 20:34:35.708806'
+  - - '90'
+    - '119'
+    - Gesu Bambino
+    - Yon
+    - 
+    - 
+    - Martens
+    - T-TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.709957'
+    - '2015-07-08 20:34:35.709957'
+  - - '91'
+    - '37'
+    - Get a Job
+    - Lowjeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.711279'
+    - '2015-07-08 20:34:35.711279'
+  - - '92'
+    - '129'
+    - Get on the Raft with Taft
+    - Jack Rogers
+    - 
+    - 
+    - 
+    - TTBB
+    - Campaign Songs Patriotic
+    - '2015-07-08 20:34:35.712489'
+    - '2015-07-08 20:34:35.712489'
+  - - '93'
+    - '308'
+    - 'Getting Sentimental '
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Swing
+    - '2015-07-08 20:34:35.713688'
+    - '2015-07-08 20:34:35.713688'
+  - - '94'
+    - '184'
+    - Getting To Know You
+    - Rodgers/Stickles
+    - 
+    - 
+    - Hammerstein, O.
+    - TTBB
+    - B'way or Movie
+    - '2015-07-08 20:34:35.714884'
+    - '2015-07-08 20:34:35.714884'
+  - - '95'
+    - '269'
+    - Girl of My Dreams
+    - Clapp/Embury
+    - 
+    - 
+    - 
+    - 
+    - Love Song
+    - '2015-07-08 20:34:35.716175'
+    - '2015-07-08 20:34:35.716175'
+  - - '96'
+    - '131'
+    - Give Me Your Tired Your Poor
+    - BERLIN/Ringwald
+    - 
+    - RINGWALD, R.
+    - LAZARUS, E.
+    - TTBB
+    - Patriotic Broadway Musical
+    - '2015-07-08 20:34:35.717548'
+    - '2015-07-08 20:34:35.717548'
+  - - '97'
+    - '172'
+    - Give My Regards To Broadway
+    - Cohan/Ehret
+    - 
+    - 
+    - 
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.718758'
+    - '2015-07-08 20:34:35.718758'
+  - - '98'
+    - '285'
+    - Give My Regards to Broadway
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Broadway
+    - '2015-07-08 20:34:35.719942'
+    - '2015-07-08 20:34:35.719942'
+  - - '99'
+    - '116'
+    - Go Tell It on The Mountain
+    - Simeone
+    - 
+    - SIMEONE, H.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.721105'
+    - '2015-07-08 20:34:35.721105'
+  - - '100'
+    - '300'
+    - Go Tell It On the Mountain
+    - Schmit
+    - 
+    - 
+    - 
+    - 
+    - Spiritual
+    - '2015-07-08 20:34:35.722333'
+    - '2015-07-08 20:34:35.722333'
+  - - '101'
+    - '10'
+    - God Bless America
+    - BERLIN/ ROGERS
+    - 
+    - MAGOR, L.
+    - 
+    - SSA-TB
+    - Patriotic
+    - '2015-07-08 20:34:35.723528'
+    - '2015-07-08 20:34:35.723528'
+  - - '102'
+    - '118'
+    - God Bless America
+    - BERLIN/RINGWALD
+    - 
+    - RINGWALD, R.
+    - BERLIN
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.724696'
+    - '2015-07-08 20:34:35.724696'
+  - - '103'
+    - '147'
+    - God of Grace and God of Glory
+    - HUGHES/Moyer
+    - 
+    - MOYER, H.
+    - FOSDICK, H.
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.725888'
+    - '2015-07-08 20:34:35.725888'
+  - - '104'
+    - '240'
+    - Gold Eagle
+    - Schmit
+    - 
+    - 
+    - 
+    - 
+    - Patriotic
+    - '2015-07-08 20:34:35.727265'
+    - '2015-07-08 20:34:35.727265'
+  - - '105'
+    - '26'
+    - Gonna Rise Up Singing
+    - BESIG, D.
+    - 
+    - 
+    - BESIG, D.
+    - TTBB
+    - SACRED
+    - '2015-07-08 20:34:35.728558'
+    - '2015-07-08 20:34:35.728558'
+  - - '106'
+    - '24'
+    - Good Old Mountain Dew
+    - arr. Genuching
+    - 
+    - GENUCHI, I.
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:35.729792'
+    - '2015-07-08 20:34:35.729792'
+  - - '107'
+    - '388'
+    - Great is He, the Lord Eternal
+    - Davies, Bryan
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.731051'
+    - '2015-07-08 20:34:35.731051'
+  - - '108'
+    - '123'
+    - Great Pretender, The
+    - Ram/Kirby Shaw
+    - 
+    - Shaw
+    - Ram
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:35.732359'
+    - '2015-07-08 20:34:35.732359'
+  - - '109'
+    - '276'
+    - Gute Nacht
+    - Woodworth
+    - 
+    - 
+    - 
+    - 
+    - German Folk song
+    - '2015-07-08 20:34:35.733773'
+    - '2015-07-08 20:34:35.733773'
+  - - '110'
+    - '381'
+    - Gute Nacht
+    - McKelvy, James
+    - 
+    - 
+    - 
+    - TTBB
+    - German Folk Song
+    - '2015-07-08 20:34:35.735031'
+    - '2015-07-08 20:34:35.735031'
+  - - '111'
+    - '272'
+    - Halls of Ivy, The
+    - Knight
+    - 
+    - 
+    - 
+    - 
+    - College Song
+    - '2015-07-08 20:34:35.73623'
+    - '2015-07-08 20:34:35.73623'
+  - - '112'
+    - '38'
+    - Happy Together
+    - Bonner & Gordon/Lowjeski
+    - 
+    - Lojeski
+    - Bonner & Gordon
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.737348'
+    - '2015-07-08 20:34:35.737348'
+  - - '113'
+    - '249'
+    - Happy Wanderer
+    - Moler
+    - 
+    - 
+    - 
+    - 
+    - Folk Song
+    - '2015-07-08 20:34:35.738717'
+    - '2015-07-08 20:34:35.738717'
+  - - '114'
+    - '151'
+    - Harp that one thro' Tara's halls (The)
+    - 
+    - 
+    - MOORE, T.
+    - Moore
+    - TTBB
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.740067'
+    - '2015-07-08 20:34:35.740067'
+  - - '115'
+    - '173'
+    - Has Sorrow Thy Young Days Shaded?
+    - "/Davidson"
+    - 
+    - 
+    - Moore
+    - TTBB
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.741392'
+    - '2015-07-08 20:34:35.741392'
+  - - '116'
+    - '121'
+    - Have Yourself a Merry Little Christmas
+    - "/Boyden"
+    - 
+    - 
+    - MARTIN & BLAINE
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.742529'
+    - '2015-07-08 20:34:35.742529'
+  - - '117'
+    - '398'
+    - Heartahces
+    - Hoffman, Al
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.743713'
+    - '2015-07-08 20:34:35.743713'
+  - - '118'
+    - '81'
+    - Heartbreak Hotel
+    - McGilvrey
+    - 
+    - Lojeski
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:35.744894'
+    - '2015-07-08 20:34:35.744894'
+  - - '119'
+    - '295'
+    - Heat Wave
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.746105'
+    - '2015-07-08 20:34:35.746105'
+  - - '120'
+    - '100'
+    - Heather on the Hill (The)
+    - LOWE, F./LAMONT
+    - 
+    - 
+    - LERNER, A.
+    - TTBB
+    - B'way or Movie
+    - '2015-07-08 20:34:35.747326'
+    - '2015-07-08 20:34:35.747326'
+  - - '121'
+    - '252'
+    - Heave Ho, My Lads
+    - Lawrence
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:35.748541'
+    - '2015-07-08 20:34:35.748541'
+  - - '122'
+    - '361'
+    - Heaven Somewhere
+    - Hatfield
+    - 
+    - 
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:35.749657'
+    - '2015-07-08 20:34:35.749657'
+  - - '123'
+    - '397'
+    - Here Come a Ship Full-laden
+    - Schuetz/Rice
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.750878'
+    - '2015-07-08 20:34:35.750878'
+  - - '124'
+    - '96'
+    - Here's a Health
+    - anon
+    - 
+    - 
+    - 
+    - '4 prt '
+    - Drinking Song Round
+    - '2015-07-08 20:34:35.752083'
+    - '2015-07-08 20:34:35.752083'
+  - - '125'
+    - '287'
+    - Hey There
+    - "/Allen"
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.753278'
+    - '2015-07-08 20:34:35.753278'
+  - - '126'
+    - '98'
+    - HEY, LOOK ME OVER
+    - COLEMAN, C./WARNICK
+    - 
+    - 
+    - COLEMAN, C.
+    - 
+    - 
+    - '2015-07-08 20:34:35.754546'
+    - '2015-07-08 20:34:35.754546'
+  - - '127'
+    - '196'
+    - Hodie (for Carrie)
+    - Schmit, C.
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.755886'
+    - '2015-07-08 20:34:35.755886'
+  - - '128'
+    - '360'
+    - Hodie, Alleluia
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.757075'
+    - '2015-07-08 20:34:35.757075'
+  - - '129'
+    - '325'
+    - Holly and the Ivy
+    - Evans
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.758175'
+    - '2015-07-08 20:34:35.758175'
+  - - '130'
+    - '61'
+    - Homeward Bound
+    - "/Tolleson"
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.759337'
+    - '2015-07-08 20:34:35.759337'
+  - - '131'
+    - '206'
+    - Hooked On History
+    - Beall/Carter
+    - 
+    - 
+    - 
+    - 2 part
+    - specialty
+    - '2015-07-08 20:34:35.760577'
+    - '2015-07-08 20:34:35.760577'
+  - - '132'
+    - '94'
+    - Hospodi Pomilui
+    - LVOVSKY, G./Krone
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas  Sacred Chant
+    - '2015-07-08 20:34:35.761797'
+    - '2015-07-08 20:34:35.761797'
+  - - '133'
+    - '195'
+    - Hot Time In The Old Town
+    - Metz, T.
+    - 
+    - 
+    - Hayden, J.
+    - Unison
+    - Pop
+    - '2015-07-08 20:34:35.76317'
+    - '2015-07-08 20:34:35.76317'
+  - - '134'
+    - '81'
+    - Hound Dog
+    - McGilvrey
+    - 
+    - Lojeski
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:35.764427'
+    - '2015-07-08 20:34:35.764427'
+  - - '135'
+    - '93'
+    - I Left My Heart In San Francisco
+    - CROSS, D/Brimhall
+    - 
+    - BRIMHALL, J.
+    - CORY, G.
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.765713'
+    - '2015-07-08 20:34:35.765713'
+  - - '136'
+    - '274'
+    - I Love Paris
+    - "/Rogers"
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.766976'
+    - '2015-07-08 20:34:35.766976'
+  - - '137'
+    - '404'
+    - I saw three ships
+    - Riese, Mark
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.768582'
+    - '2015-07-08 20:34:35.768582'
+  - - '138'
+    - '148'
+    - I Talk To The Trees
+    - LOWE, F./Stickles
+    - 
+    - STICKLES, W.
+    - LERNER, A.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.770368'
+    - '2015-07-08 20:34:35.770368'
+  - - '139'
+    - '42'
+    - I want a girl
+    - arr. Ades
+    - 
+    - Ades
+    - 
+    - TTBB
+    - Barbershop
+    - '2015-07-08 20:34:35.772089'
+    - '2015-07-08 20:34:35.772089'
+  - - '140'
+    - '150'
+    - I Wish I Was Single Again
+    - "/Tom Scott"
+    - 
+    - SCOTT, TOM
+    - 
+    - TTBB
+    - Minstrel Song
+    - '2015-07-08 20:34:35.774'
+    - '2015-07-08 20:34:35.774'
+  - - '141'
+    - '158'
+    - If Ever I Would Leave You
+    - Loewe, F.
+    - 
+    - 
+    - Lerner, A.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.775848'
+    - '2015-07-08 20:34:35.775848'
+  - - '142'
+    - '241'
+    - If I Were a Rich Man
+    - Bock
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.777576'
+    - '2015-07-08 20:34:35.777576'
+  - - '143'
+    - '92'
+    - If You Knew Susie
+    - Meyer/Lowjeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Musical
+    - '2015-07-08 20:34:35.779186'
+    - '2015-07-08 20:34:35.779186'
+  - - '144'
+    - '142'
+    - If You've Only Got A Moustache
+    - FOSTER, S./Van Camp
+    - 
+    - VAN CAMP, L.
+    - PORTER, C.
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.780683'
+    - '2015-07-08 20:34:35.780683'
+  - - '145'
+    - '181'
+    - Impossible Dream, The
+    - Leigh, M/Ringwald
+    - 
+    - Ringwald, R.
+    - Darion, J.
+    - TTBB
+    - B'way or Movie
+    - '2015-07-08 20:34:35.78204'
+    - '2015-07-08 20:34:35.78204'
+  - - '146'
+    - '39'
+    - In dem old cotton fields back home
+    - 
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.783376'
+    - '2015-07-08 20:34:35.783376'
+  - - '147'
+    - '386'
+    - In the Rifted Rock
+    - Bentley/Moyer
+    - 
+    - 
+    - 
+    - TTB
+    - Sacred
+    - '2015-07-08 20:34:35.784725'
+    - '2015-07-08 20:34:35.784725'
+  - - '148'
+    - '146'
+    - It's A Grand Night For Singing
+    - RODGERS, R./Stickles
+    - 
+    - 
+    - HAMMERSTEIN, O.
+    - TTBB
+    - B'way or Movie
+    - '2015-07-08 20:34:35.786185'
+    - '2015-07-08 20:34:35.786185'
+  - - '149'
+    - '78'
+    - It's Beginning to Look Like Christmas
+    - Willson/Churchill
+    - 
+    - Churchill
+    - Willson
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.787493'
+    - '2015-07-08 20:34:35.787493'
+  - - '150'
+    - '77'
+    - Its the most wonderful time of the year
+    - POLA & WYLE/Ades
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.788788'
+    - '2015-07-08 20:34:35.788788'
+  - - '151'
+    - '76'
+    - I've Got You Under My Skin
+    - PORTER, C./Stickles
+    - 
+    - STICKLES, W.
+    - PORTER, C.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.790034'
+    - '2015-07-08 20:34:35.790034'
+  - - '152'
+    - '299'
+    - Jamaica Farewell
+    - "/House"
+    - 
+    - 
+    - 
+    - 
+    - Jamaican Folk Song
+    - '2015-07-08 20:34:35.791497'
+    - '2015-07-08 20:34:35.791497'
+  - - '153'
+    - '75'
+    - Java Jive
+    - OAKLAND, B./Lowjeski
+    - 
+    - LOJESKI, E.
+    - DRAKE, M.
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.793068'
+    - '2015-07-08 20:34:35.793068'
+  - - '154'
+    - '275'
+    - Jean
+    - McEwen/Allen
+    - 
+    - 
+    - 
+    - 
+    - 'Movie '
+    - '2015-07-08 20:34:35.794594'
+    - '2015-07-08 20:34:35.794594'
+  - - '155'
+    - '67'
+    - Jesu, Joy of Man's Desiring
+    - Bach/Goodrich
+    - 
+    - Smith
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.796123'
+    - '2015-07-08 20:34:35.796123'
+  - - '156'
+    - '74'
+    - Jesu, Joy of Man's Desiring
+    - BACH, J.S./Davison
+    - 
+    - A.T.D.
+    - 
+    - TTBB
+    - Sacred/Christmas
+    - '2015-07-08 20:34:35.797339'
+    - '2015-07-08 20:34:35.797339'
+  - - '157'
+    - '157'
+    - Jingle Bells
+    - Traditional/T.I.
+    - 
+    - T.I.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.7985'
+    - '2015-07-08 20:34:35.7985'
+  - - '158'
+    - '244'
+    - Jingle Bells
+    - "/Charles"
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.799672'
+    - '2015-07-08 20:34:35.799672'
+  - - '159'
+    - '247'
+    - Jingle Bells
+    - "/T I"
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.800844'
+    - '2015-07-08 20:34:35.800844'
+  - - '160'
+    - '73'
+    - King And I selections
+    - RODGERS, R./Warnick
+    - 
+    - Warnick
+    - HAMMERSTEIN, O.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.802004'
+    - '2015-07-08 20:34:35.802004'
+  - - '161'
+    - '1'
+    - La Pastorella
+    - SCHUBERT, F.
+    - 
+    - Shaw
+    - Goldini
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.803264'
+    - '2015-07-08 20:34:35.803264'
+  - - '162'
+    - '230'
+    - Lamour de Moy
+    - Shaw
+    - 
+    - 
+    - 
+    - 
+    - French Folk Song
+    - '2015-07-08 20:34:35.804492'
+    - '2015-07-08 20:34:35.804492'
+  - - '163'
+    - '374'
+    - L'Amour de Moy
+    - Parker/Shaw
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.805708'
+    - '2015-07-08 20:34:35.805708'
+  - - '164'
+    - '245'
+    - Let It Snow
+    - "/Allen"
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.80697'
+    - '2015-07-08 20:34:35.80697'
+  - - '165'
+    - '88'
+    - 'Let Us Eat, Drink and Be Merry (Oy '
+    - ENCINA, D./MALIN
+    - 
+    - MALIN, D.
+    - 
+    - TTBB
+    - Drinking Song
+    - '2015-07-08 20:34:35.808148'
+    - '2015-07-08 20:34:35.808148'
+  - - '166'
+    - '169'
+    - Lida Rose
+    - Willson, M./Willson
+    - 
+    - 
+    - 
+    - 
+    - Broadway Musical
+    - '2015-07-08 20:34:35.809523'
+    - '2015-07-08 20:34:35.809523'
+  - - '167'
+    - '233'
+    - Linden Lea
+    - Vaughn Williams
+    - 
+    - 
+    - 
+    - 
+    - English Folk Song
+    - '2015-07-08 20:34:35.810685'
+    - '2015-07-08 20:34:35.810685'
+  - - '168'
+    - '371'
+    - Linden Lea
+    - Harrison. J
+    - 
+    - 
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.811819'
+    - '2015-07-08 20:34:35.811819'
+  - - '169'
+    - '87'
+    - Little Drummer Boy, The
+    - SIMEONE, H.
+    - 
+    - SIMEONE, H.
+    - DAVIS, J.
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.81309'
+    - '2015-07-08 20:34:35.81309'
+  - - '170'
+    - '326'
+    - Little Innocent Lamb
+    - Bartholomew
+    - 
+    - 
+    - 
+    - 
+    - Spiritual
+    - '2015-07-08 20:34:35.814336'
+    - '2015-07-08 20:34:35.814336'
+  - - '171'
+    - '214'
+    - Little Irish Girl
+    - 
+    - 
+    - 
+    - 
+    - Unison
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.815606'
+    - '2015-07-08 20:34:35.815606'
+  - - '172'
+    - '139'
+    - Loch Lomond
+    - "/Duson"
+    - 
+    - DUSON, D.
+    - 
+    - TTBB
+    - Scottish Folk Song
+    - '2015-07-08 20:34:35.81687'
+    - '2015-07-08 20:34:35.81687'
+  - - '173'
+    - '86'
+    - Long Day Closes, The
+    - Arthur Sullivan/Kings Singers
+    - 
+    - 
+    - Chorley
+    - TTBB
+    - Operetta Chorus
+    - '2015-07-08 20:34:35.818075'
+    - '2015-07-08 20:34:35.818075'
+  - - '174'
+    - '160'
+    - Lord's Prayer
+    - Malotte, A./Dels
+    - 
+    - Deis, C.
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.81921'
+    - '2015-07-08 20:34:35.81921'
+  - - '175'
+    - '81'
+    - Love Me Tender
+    - McGilvrey
+    - 
+    - Lojeski
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:35.820381'
+    - '2015-07-08 20:34:35.820381'
+  - - '176'
+    - '85'
+    - Love Walked In
+    - GERSHWIN, G./Stickles
+    - 
+    - STICKLES, W.
+    - GERSHWIN, I.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.821681'
+    - '2015-07-08 20:34:35.821681'
+  - - '177'
+    - '137'
+    - Lovliest of Trees, The Cherry
+    - NANCE, R
+    - 
+    - 
+    - HOUSEMAN, A.
+    - TTBB
+    - Love Song
+    - '2015-07-08 20:34:35.822908'
+    - '2015-07-08 20:34:35.822908'
+  - - '178'
+    - '138'
+    - Low, How a Rose e're Blooming
+    - Praetorius
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.824125'
+    - '2015-07-08 20:34:35.824125'
+  - - '179'
+    - '177'
+    - Lullaby of Broadway
+    - Warren
+    - 
+    - 
+    - Dubin
+    - T
+    - Broadway Musical
+    - '2015-07-08 20:34:35.825306'
+    - '2015-07-08 20:34:35.825306'
+  - - '180'
+    - '156'
+    - Man of La Mancha
+    - Leigh, M.
+    - 
+    - Frank, M.
+    - Darion, J.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.826522'
+    - '2015-07-08 20:34:35.826522'
+  - - '181'
+    - '136'
+    - Marching
+    - Lemke
+    - 
+    - 
+    - 
+    - TTBB
+    - Opera Chorus
+    - '2015-07-08 20:34:35.827878'
+    - '2015-07-08 20:34:35.827878'
+  - - '182'
+    - '190'
+    - Marching to Pretoria
+    - Marais, J/Abbott
+    - 
+    - 
+    - 
+    - TTBB
+    - South African Veld Song
+    - '2015-07-08 20:34:35.829173'
+    - '2015-07-08 20:34:35.829173'
+  - - '183'
+    - '133'
+    - Marry A Woman Uglier Than You
+    - De Power
+    - 
+    - de Paur
+    - 
+    - TTBB
+    - Calypso
+    - '2015-07-08 20:34:35.830396'
+    - '2015-07-08 20:34:35.830396'
+  - - '184'
+    - '365'
+    - Mary Ann
+    - Hendrickson
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.831692'
+    - '2015-07-08 20:34:35.831692'
+  - - '185'
+    - '155'
+    - Mary Had A Baby
+    - Dawson/Parker-Shaw
+    - 
+    - Dawson, W.
+    - Dawson, W.
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:35.833'
+    - '2015-07-08 20:34:35.833'
+  - - '186'
+    - '267'
+    - Mavourneen
+    - Bartholomew
+    - 
+    - 
+    - 
+    - 
+    - Irish Love Song
+    - '2015-07-08 20:34:35.834409'
+    - '2015-07-08 20:34:35.834409'
+  - - '187'
+    - '135'
+    - McGilvrey Tribute (Aural Lee)
+    - "/Darby"
+    - 
+    - Darby/Boyden
+    - Meyer
+    - TTBB
+    - SOTS
+    - '2015-07-08 20:34:35.835704'
+    - '2015-07-08 20:34:35.835704'
+  - - '188'
+    - '264'
+    - Men of Harlech
+    - "/Evans"
+    - 
+    - 
+    - 
+    - 
+    - Scotish Folk Song
+    - '2015-07-08 20:34:35.836967'
+    - '2015-07-08 20:34:35.836967'
+  - - '189'
+    - '39'
+    - Michael Row the Boat Ashore
+    - 
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.838136'
+    - '2015-07-08 20:34:35.838136'
+  - - '190'
+    - '228'
+    - Minstel Boy
+    - "/Whitehead"
+    - 
+    - 
+    - 
+    - 
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.839381'
+    - '2015-07-08 20:34:35.839381'
+  - - '191'
+    - '162'
+    - Mood Indigo
+    - Ellington/Thorne
+    - 
+    - Thorne, F.
+    - 
+    - TTBB
+    - Swing
+    - '2015-07-08 20:34:35.840573'
+    - '2015-07-08 20:34:35.840573'
+  - - '192'
+    - '40'
+    - Moon River
+    - MANCINI, H.
+    - 
+    - 
+    - MERCER, J.
+    - SATB
+    - B'way or Movie
+    - '2015-07-08 20:34:35.841864'
+    - '2015-07-08 20:34:35.841864'
+  - - '193'
+    - '352'
+    - Movin On
+    - Strommen, C
+    - 
+    - 
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:35.843106'
+    - '2015-07-08 20:34:35.843106'
+  - - '194'
+    - '257'
+    - Must I Then? Muss I Denn
+    - "/Linn"
+    - 
+    - 
+    - 
+    - 
+    - German Folk Song
+    - '2015-07-08 20:34:35.844452'
+    - '2015-07-08 20:34:35.844452'
+  - - '195'
+    - '132'
+    - My Bonnie Lass
+    - MORLEY, T./Davidson
+    - 
+    - A.T.D.
+    - 
+    - TTBB
+    - Madrigal
+    - '2015-07-08 20:34:35.845629'
+    - '2015-07-08 20:34:35.845629'
+  - - '196'
+    - '170'
+    - My Fair Lady Choral Selection
+    - Loewe, F./Warnick
+    - 
+    - 
+    - Lerner, A.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.84683'
+    - '2015-07-08 20:34:35.84683'
+  - - '197'
+    - '95'
+    - My Love is Like a Rose
+    - BUTLER, Eugene
+    - 
+    - 
+    - BURNS, Robert
+    - TBB
+    - Scotish Love Song
+    - '2015-07-08 20:34:35.848048'
+    - '2015-07-08 20:34:35.848048'
+  - - '198'
+    - '377'
+    - My Love is Like a Rose
+    - Butler, Eugene
+    - 
+    - 
+    - 
+    - TBB
+    - Ballad
+    - '2015-07-08 20:34:35.849249'
+    - '2015-07-08 20:34:35.849249'
+  - - '199'
+    - '82'
+    - Navy Hymn (Eternal Father)
+    - DYKES, J./Bellah
+    - 
+    - HOWE, N.
+    - WHITING, W.
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.850449'
+    - '2015-07-08 20:34:35.850449'
+  - - '200'
+    - '108'
+    - 'Navy Hymn (Eternal Father, Strong to '
+    - DYKES, J.
+    - 
+    - HOWE, N.
+    - WHITING, W.
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.85167'
+    - '2015-07-08 20:34:35.85167'
+  - - '201'
+    - '280'
+    - Night of Silence
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.852914'
+    - '2015-07-08 20:34:35.852914'
+  - - '202'
+    - '175'
+    - Nightingale Sang in Berkeley Square
+    - Sherwin/Puerling
+    - 
+    - 
+    - Maschwitz
+    - SATB
+    - Ballad
+    - '2015-07-08 20:34:35.854159'
+    - '2015-07-08 20:34:35.854159'
+  - - '203'
+    - '313'
+    - A Nightingale Sang in Berkeley Square
+    - Manning Sherwin
+    - ''
+    - Gene Puerling
+    - Phil Mattson
+    - SATB
+    - Pop
+    - '2015-07-08 20:34:35.855495'
+    - '2015-10-06 18:20:01.062544'
+  - - '204'
+    - '41'
+    - Nocturnal Serenade
+    - SCHUBERT, F
+    - 
+    - 
+    - 
+    - TTBB
+    - German Lieder
+    - '2015-07-08 20:34:35.856738'
+    - '2015-07-08 20:34:35.856738'
+  - - '205'
+    - '297'
+    - Noel
+    - Rogel/Schram
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.85791'
+    - '2015-07-08 20:34:35.85791'
+  - - '206'
+    - '229'
+    - Now is the Month of Maying
+    - Morley/Davison
+    - 
+    - 
+    - 
+    - 
+    - Madrigal
+    - '2015-07-08 20:34:35.859133'
+    - '2015-07-08 20:34:35.859133'
+  - - '207'
+    - '223'
+    - Now Let Every Tongue Adore Thee
+    - Bach, J.S./Davison
+    - 
+    - 
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.860423'
+    - '2015-07-08 20:34:35.860423'
+  - - '208'
+    - '243'
+    - Nowel
+    - Randall Thompson
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.861666'
+    - '2015-07-08 20:34:35.861666'
+  - - '209'
+    - '213'
+    - O HOLY NIGHT
+    - ADAM, A.
+    - 
+    - BRECK, E.
+    - ADAM, A.
+    - Duet
+    - Christmas
+    - '2015-07-08 20:34:35.862894'
+    - '2015-07-08 20:34:35.862894'
+  - - '210'
+    - '224'
+    - O My Lord Let Not Your Blinding Fury
+    - Josquin/Adams
+    - 
+    - 
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.864124'
+    - '2015-07-08 20:34:35.864124'
+  - - '211'
+    - '44'
+    - O Tannenbaum
+    - Parker-Shaw
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.865345'
+    - '2015-07-08 20:34:35.865345'
+  - - '212'
+    - '174'
+    - Oklahoma! Choral Selection
+    - Rodgers, R./Ehret
+    - 
+    - 
+    - Hammerstein, O.
+    - TB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.866637'
+    - '2015-07-08 20:34:35.866637'
+  - - '213'
+    - '83'
+    - Old Man Noah
+    - Bartholomew
+    - 
+    - BARTHOLOMEW, M.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.867882'
+    - '2015-07-08 20:34:35.867882'
+  - - '214'
+    - '242'
+    - Old Man River
+    - Kern
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.869015'
+    - '2015-07-08 20:34:35.869015'
+  - - '215'
+    - '182'
+    - Oldest Established Crap Game, The
+    - Loesser, F.
+    - 
+    - 
+    - 
+    - Quartet
+    - Broadway Musical
+    - '2015-07-08 20:34:35.870225'
+    - '2015-07-08 20:34:35.870225'
+  - - '216'
+    - '188'
+    - Olympic Hymn
+    - "/Linn, R."
+    - 
+    - 
+    - 
+    - 
+    - StFYC
+    - '2015-07-08 20:34:35.871363'
+    - '2015-07-08 20:34:35.871363'
+  - - '217'
+    - '383'
+    - Once to Every Man and Nation
+    - Walters, John
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.872531'
+    - '2015-07-08 20:34:35.872531'
+  - - '218'
+    - '61'
+    - One More Day
+    - arr. Tolleson
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.873698'
+    - '2015-07-08 20:34:35.873698'
+  - - '219'
+    - '319'
+    - One More For the Road
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Swing Drinking Song
+    - '2015-07-08 20:34:35.874869'
+    - '2015-07-08 20:34:35.874869'
+  - - '220'
+    - '387'
+    - Out on the Rolling Ocean
+    - Funk, Jeff
+    - 
+    - 
+    - 
+    - TBB
+    - Sea Song
+    - '2015-07-08 20:34:35.876142'
+    - '2015-07-08 20:34:35.876142'
+  - - '221'
+    - '370'
+    - Passing By
+    - Purcell, Edward
+    - 
+    - 
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.877451'
+    - '2015-07-08 20:34:35.877451'
+  - - '222'
+    - '105'
+    - PASTURE, The
+    - THOMPSON, R.
+    - 
+    - THOMPSON, R.
+    - FROST, R.
+    - TBB
+    - Art Song
+    - '2015-07-08 20:34:35.878772'
+    - '2015-07-08 20:34:35.878772'
+  - - '223'
+    - '219'
+    - People will say we're in Love
+    - RODGERS, R.
+    - 
+    - 
+    - HAMMERSTEIN, O.
+    - UNISON
+    - BROADWAY MUSICAL
+    - '2015-07-08 20:34:35.880069'
+    - '2015-07-08 20:34:35.880069'
+  - - '224'
+    - '304'
+    - Pie Jesu
+    - Webber
+    - 
+    - 
+    - 
+    - TTB
+    - Sacred
+    - '2015-07-08 20:34:35.881193'
+    - '2015-07-08 20:34:35.881193'
+  - - '225'
+    - '46'
+    - Pilgrims Chorus
+    - "WAGNER, R./Dawson\r"
+    - 
+    - Dawson
+    - WAGNER, R.
+    - TTBB
+    - Opera Chorus
+    - '2015-07-08 20:34:35.882367'
+    - '2015-07-08 20:34:35.882367'
+  - - '226'
+    - '47'
+    - Pilgrims Chorus
+    - WAGNER, R./Zollner
+    - 
+    - Zollner
+    - WAGNER, R.
+    - TTBB
+    - Opera
+    - '2015-07-08 20:34:35.883607'
+    - '2015-07-08 20:34:35.883607'
+  - - '227'
+    - '48'
+    - Pilgrims Chorus
+    - WAGNER, R./Schrimer
+    - 
+    - Schirmer
+    - WAGNER, R.
+    - TTBB
+    - Opera Chorus
+    - '2015-07-08 20:34:35.884909'
+    - '2015-07-08 20:34:35.884909'
+  - - '228'
+    - '49'
+    - Pope, The
+    - STOECKEL, G./Shepherd
+    - 
+    - SHEPARD, T.
+    - NOACK, C.
+    - TTBB
+    - Drinking Song
+    - '2015-07-08 20:34:35.886144'
+    - '2015-07-08 20:34:35.886144'
+  - - '229'
+    - '391'
+    - Praise and Worship
+    - Bock, Fred
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.887542'
+    - '2015-07-08 20:34:35.887542'
+  - - '230'
+    - '197'
+    - Prayer For Peace (Hungarian Anthem)
+    - Himnusz/Schmidt
+    - 
+    - Schmit, C.
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.888779'
+    - '2015-07-08 20:34:35.888779'
+  - - '231'
+    - '376'
+    - Preach Not Me Your Musty Rules
+    - Rice, Martin
+    - 
+    - 
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.89341'
+    - '2015-07-08 20:34:35.89341'
+  - - '232'
+    - '323'
+    - Precious Lord Take My Hand
+    - "/Ringwald"
+    - 
+    - 
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.894578'
+    - '2015-07-08 20:34:35.894578'
+  - - '233'
+    - '225'
+    - 'Pulse of an Irishman '
+    - Beethoven/Minser
+    - 
+    - 
+    - 
+    - 
+    - Irish Folk Song
+    - '2015-07-08 20:34:35.895699'
+    - '2015-07-08 20:34:35.895699'
+  - - '234'
+    - '50'
+    - Richard Rodgers Medley
+    - Rodgers
+    - 
+    - 
+    - 
+    - Solo
+    - Broadway Musicals
+    - '2015-07-08 20:34:35.896807'
+    - '2015-07-08 20:34:35.896807'
+  - - '235'
+    - '359'
+    - Rio Grande
+    - Lewin, O
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.898003'
+    - '2015-07-08 20:34:35.898003'
+  - - '236'
+    - '362'
+    - Rise Up Shepherd
+    - Hayes, Mark
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas Spiritual
+    - '2015-07-08 20:34:35.8993'
+    - '2015-07-08 20:34:35.8993'
+  - - '237'
+    - '333'
+    - Roadways
+    - Clark, P
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.900583'
+    - '2015-07-08 20:34:35.900583'
+  - - '238'
+    - '51'
+    - Rock Around The Clock
+    - McGilvrey
+    - 
+    - McGilvray
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.901864'
+    - '2015-07-08 20:34:35.901864'
+  - - '239'
+    - '379'
+    - Sailor Song
+    - Singh, Vijay
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.903109'
+    - '2015-07-08 20:34:35.903109'
+  - - '240'
+    - '261'
+    - Salvation Belongeth to Our God
+    - "/Davison"
+    - 
+    - 
+    - 
+    - 
+    - Russian Scared
+    - '2015-07-08 20:34:35.904298'
+    - '2015-07-08 20:34:35.904298'
+  - - '241'
+    - '263'
+    - Sea Gypsy
+    - Clark
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:35.905457'
+    - '2015-07-08 20:34:35.905457'
+  - - '242'
+    - '277'
+    - Sea Saga
+    - Allen
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:35.906587'
+    - '2015-07-08 20:34:35.906587'
+  - - '243'
+    - '53'
+    - Seeing Nellie Home
+    - FLETCHER, J./Parker-Shaw
+    - 
+    - SHAW, R.
+    - KYLE, F.
+    - TTBB
+    - American Folk Song
+    - '2015-07-08 20:34:35.90777'
+    - '2015-07-08 20:34:35.90777'
+  - - '244'
+    - '166'
+    - Set Down Servant!
+    - "/Parker-Shaw"
+    - 
+    - Shaw
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:35.908944'
+    - '2015-07-08 20:34:35.908944'
+  - - '245'
+    - '246'
+    - Shall Not Perish from the Earth
+    - Clay Schmit
+    - 
+    - 
+    - Abraham Lincoln
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.910336'
+    - '2015-07-08 20:34:35.910336'
+  - - '246'
+    - '291'
+    - Shenadoah
+    - "/Shaw"
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:35.911505'
+    - '2015-07-08 20:34:35.911505'
+  - - '247'
+    - '55'
+    - Shenandoah
+    - "/Bartholomew"
+    - 
+    - BARTHOLOMEW, M.
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:35.912648'
+    - '2015-07-08 20:34:35.912648'
+  - - '248'
+    - '61'
+    - Shenandoah
+    - "/Tolleson"
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.913975'
+    - '2015-07-08 20:34:35.913975'
+  - - '249'
+    - '58'
+    - Silver Bells
+    - LIVINGSTON Evans/Naylor
+    - 
+    - Naylor
+    - LIVINGSTON & Evans
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.915204'
+    - '2015-07-08 20:34:35.915204'
+  - - '250'
+    - '101'
+    - Sine Nomine
+    - RALPH VAUGHN Williams
+    - 
+    - Rosenberg
+    - HOW
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.916424'
+    - '2015-07-08 20:34:35.916424'
+  - - '251'
+    - '198'
+    - Sing, Sing a Song for Me
+    - "/Grayson"
+    - 
+    - 
+    - 
+    - SATB
+    - Renaissance Secular
+    - '2015-07-08 20:34:35.917649'
+    - '2015-07-08 20:34:35.917649'
+  - - '252'
+    - '273'
+    - Singing in the Rain
+    - "/Rogers"
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.918817'
+    - '2015-07-08 20:34:35.918817'
+  - - '253'
+    - '390'
+    - Sinner Man
+    - Shaw, Kirby
+    - 
+    - 
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:35.91989'
+    - '2015-07-08 20:34:35.91989'
+  - - '254'
+    - '168'
+    - Sit Down You're Rockin' The Boat
+    - Loesser, F.
+    - 
+    - 
+    - 
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.921055'
+    - '2015-07-08 20:34:35.921055'
+  - - '255'
+    - '63'
+    - Sleepytime Bach
+    - arr. Bennett Williams
+    - 
+    - WILLIAMS, B.
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.922254'
+    - '2015-07-08 20:34:35.922254'
+  - - '256'
+    - '293'
+    - Sleigh, The
+    - Kountz/Baldwin
+    - 
+    - 
+    - 
+    - 
+    - Christmas Russian
+    - '2015-07-08 20:34:35.923562'
+    - '2015-07-08 20:34:35.923562'
+  - - '257'
+    - '322'
+    - Smoke Gets In Your Eyes
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.924807'
+    - '2015-07-08 20:34:35.924807'
+  - - '258'
+    - '286'
+    - Somewhere
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.925969'
+    - '2015-07-08 20:34:35.925969'
+  - - '259'
+    - '353'
+    - Somewhere
+    - Goodrich, H
+    - 
+    - 
+    - 
+    - TTBB
+    - Secular
+    - '2015-07-08 20:34:35.927148'
+    - '2015-07-08 20:34:35.927148'
+  - - '260'
+    - '296'
+    - Somewhere in my Memory
+    - Williams
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.92833'
+    - '2015-07-08 20:34:35.92833'
+  - - '261'
+    - '60'
+    - Song of Freedom
+    - Rachmaninoff
+    - 
+    - 
+    - ROTHERY, W.
+    - TTBB
+    - Russian Patriotic Song
+    - '2015-07-08 20:34:35.929491'
+    - '2015-07-08 20:34:35.929491'
+  - - '262'
+    - '396'
+    - Songs of a Young Man
+    - Nance, Richard
+    - 
+    - 
+    - 
+    - TTBB
+    - Secular
+    - '2015-07-08 20:34:35.930719'
+    - '2015-07-08 20:34:35.930719'
+  - - '263'
+    - '59'
+    - Sons of the Sea
+    - arr. Allen
+    - 
+    - 
+    - Clay Schmit
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.931891'
+    - '2015-07-08 20:34:35.931891'
+  - - '264'
+    - '278'
+    - Soon Its Gonna Rain
+    - "/Allen"
+    - 
+    - 
+    - 
+    - 
+    - Broadway Show
+    - '2015-07-08 20:34:35.933074'
+    - '2015-07-08 20:34:35.933074'
+  - - '265'
+    - '64'
+    - Sound Of Music (The)
+    - RODGERS, R.
+    - 
+    - WARNICK, C.
+    - HAMMERSTEIN, O.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.934235'
+    - '2015-07-08 20:34:35.934235'
+  - - '266'
+    - '199'
+    - Sound Of The City
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - specialty
+    - '2015-07-08 20:34:35.935455'
+    - '2015-07-08 20:34:35.935455'
+  - - '267'
+    - '164'
+    - Spanish Ladies
+    - "/Davidson"
+    - 
+    - Davison, A.
+    - 
+    - B-TTBB
+    - English Folk Song
+    - '2015-07-08 20:34:35.936739'
+    - '2015-07-08 20:34:35.936739'
+  - - '268'
+    - '66'
+    - Splish Splash
+    - Darin & Murray/Emerson
+    - 
+    - Emerson
+    - 
+    - TTB
+    - Pop
+    - '2015-07-08 20:34:35.937985'
+    - '2015-07-08 20:34:35.937985'
+  - - '269'
+    - '110'
+    - Standing In the Corner
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.93927'
+    - '2015-07-08 20:34:35.93927'
+  - - '270'
+    - '69'
+    - Standing On The Corner
+    - LOESSER, F./Mareen
+    - 
+    - 
+    - YARBURG, H.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.940465'
+    - '2015-07-08 20:34:35.940465'
+  - - '271'
+    - '68'
+    - Star Spangled Banner
+    - Francis Scott Key
+    - ''
+    - Smith
+    - ''
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.941602'
+    - '2015-09-23 01:31:17.35331'
+  - - '272'
+    - '350'
+    - Star Spangled Banner
+    - Francis Scott Key
+    - ''
+    - ''
+    - ''
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.94278'
+    - '2015-09-24 18:28:03.33345'
+  - - '273'
+    - '309'
+    - Stardust
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.943886'
+    - '2015-07-08 20:34:35.943886'
+  - - '274'
+    - '102'
+    - Stars of the Summer Night
+    - WOODBURY/LARGE
+    - 
+    - 
+    - LONGFELLOW
+    - TTBB
+    - GLEE CLUB CHORUS
+    - '2015-07-08 20:34:35.945045'
+    - '2015-07-08 20:34:35.945045'
+  - - '275'
+    - '253'
+    - Steal Away
+    - "/Bartholomew"
+    - 
+    - 
+    - 
+    - 
+    - Spiritual
+    - '2015-07-08 20:34:35.946245'
+    - '2015-07-08 20:34:35.946245'
+  - - '276'
+    - '103'
+    - Still, Still
+    - "/HARTS"
+    - 
+    - Rinehart
+    - 
+    - TTBB
+    - Christmas GERMAN
+    - '2015-07-08 20:34:35.947514'
+    - '2015-07-08 20:34:35.947514'
+  - - '277'
+    - '153'
+    - Stopping by Woods on a Snowy Evening
+    - THOMPSON, R.
+    - 
+    - THOMPSON, R.
+    - FROST,  R.
+    - TBB
+    - Art Song
+    - '2015-07-08 20:34:35.948735'
+    - '2015-07-08 20:34:35.948735'
+  - - '278'
+    - '238'
+    - Stout Hearted Men
+    - Romberg/Stickles
+    - ''
+    - ''
+    - ''
+    - ''
+    - Broadway Show
+    - '2015-07-08 20:34:35.950027'
+    - '2015-08-14 21:46:26.45747'
+  - - '279'
+    - '89'
+    - Streets of Laredo (The)
+    - Luboff
+    - 
+    - HUNTER, R.
+    - 
+    - TTBB
+    - Cowboy Folk Song Western
+    - '2015-07-08 20:34:35.951154'
+    - '2015-07-08 20:34:35.951154'
+  - - '280'
+    - '204'
+    - Sunrise, Sunset
+    - Bock, J./Lowjeski
+    - 
+    - Harnick, S.
+    - 
+    - 
+    - 
+    - '2015-07-08 20:34:35.952459'
+    - '2015-07-08 20:34:35.952459'
+  - - '281'
+    - '104'
+    - Swabian Folk song
+    - BRAHMS/DAVISON
+    - 
+    - 
+    - 
+    - TTBB
+    - Folk SONG
+    - '2015-07-08 20:34:35.953731'
+    - '2015-07-08 20:34:35.953731'
+  - - '282'
+    - '268'
+    - Sweet Georgia Brown
+    - "/Allan"
+    - 
+    - 
+    - 
+    - 
+    - Swing
+    - '2015-07-08 20:34:35.954919'
+    - '2015-07-08 20:34:35.954919'
+  - - '283'
+    - '222'
+    - Swing Low
+    - Reagan
+    - 
+    - 
+    - 
+    - 
+    - Spiritual
+    - '2015-07-08 20:34:35.956088'
+    - '2015-07-08 20:34:35.956088'
+  - - '284'
+    - '126'
+    - Take a Strain, Boys
+    - Schicklele
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.95729'
+    - '2015-07-08 20:34:35.95729'
+  - - '285'
+    - '216'
+    - Take Me Out to the Ball Game
+    - VON TILZER, A.
+    - 
+    - HARRIS, E.
+    - NORWORTH, J.
+    - 
+    - B'way or Movie
+    - '2015-07-08 20:34:35.958484'
+    - '2015-07-08 20:34:35.958484'
+  - - '286'
+    - '400'
+    - Ten Commandments of Love
+    - Paul, Marshall
+    - 
+    - 
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:35.95978'
+    - '2015-07-08 20:34:35.95978'
+  - - '287'
+    - '70'
+    - Testament of Freedom, The
+    - THOMPSON, R.
+    - 
+    - THOMPSON, R.
+    - JEFFERSON, T.
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.961076'
+    - '2015-07-08 20:34:35.961076'
+  - - '288'
+    - '145'
+    - Thanks Be To Thee
+    - HANDEL, G.
+    - 
+    - LEFEBVRE, C.
+    - LEFEBVRE, C.
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.96237'
+    - '2015-07-08 20:34:35.96237'
+  - - '289'
+    - '312'
+    - Thanks for the Memory
+    - Robbin/Emerson
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:35.963618'
+    - '2015-07-08 20:34:35.963618'
+  - - '290'
+    - '106'
+    - That Old Quartet of Mine
+    - GODFREY, B./PERRY
+    - 
+    - PERRY, L.
+    - 
+    - TTBB
+    - Barbershop
+    - '2015-07-08 20:34:35.964815'
+    - '2015-07-08 20:34:35.964815'
+  - - '291'
+    - '42'
+    - The Most Beautiful Girl in the World
+    - arr. Ades
+    - 
+    - Ades
+    - 
+    - TTBB
+    - Barbershop
+    - '2015-07-08 20:34:35.966056'
+    - '2015-07-08 20:34:35.966056'
+  - - '292'
+    - '375'
+    - The Piper
+    - Gooch, Warren
+    - 
+    - 
+    - 
+    - TBB
+    - Folk Song
+    - '2015-07-08 20:34:35.967202'
+    - '2015-07-08 20:34:35.967202'
+  - - '293'
+    - '259'
+    - The Sea is Now Calling
+    - Kopke
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:35.968349'
+    - '2015-07-08 20:34:35.968349'
+  - - '294'
+    - '128'
+    - There Is Nothin' Like a Dame
+    - RODGERS, R./Stickles
+    - 
+    - 
+    - HAMMERSTEIN, O.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:35.969517'
+    - '2015-07-08 20:34:35.969517'
+  - - '295'
+    - '144'
+    - They Call the Wind Maria
+    - LOWE, F./Stickles
+    - 
+    - STICKLES, W.
+    - LERNER, A.
+    - TTBB
+    - Musical
+    - '2015-07-08 20:34:35.970734'
+    - '2015-07-08 20:34:35.970734'
+  - - '296'
+    - '39'
+    - This Land is Your Land
+    - Guthry
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.972047'
+    - '2015-07-08 20:34:35.972047'
+  - - '297'
+    - '154'
+    - Three Bells, The
+    - REISFELD
+    - 
+    - 
+    - VILLARD
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.973296'
+    - '2015-07-08 20:34:35.973296'
+  - - '298'
+    - '212'
+    - Three English Carols (Wassail, Away, Sussex)
+    - Cochanek
+    - ''
+    - Kochanek, S.
+    - ''
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:35.974572'
+    - '2015-08-06 04:30:01.1407'
+  - - '299'
+    - '355'
+    - Three for America
+    - Smith/Lojeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:35.975749'
+    - '2015-07-08 20:34:35.975749'
+  - - '300'
+    - '327'
+    - Three Medieval Carols
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.976882'
+    - '2015-07-08 20:34:35.976882'
+  - - '301'
+    - '399'
+    - Three Songs
+    - Grotenhuis, Dale
+    - 
+    - 
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:35.978095'
+    - '2015-07-08 20:34:35.978095'
+  - - '302'
+    - '302'
+    - "Three Spanish Christmas Carols\rRiu, Riu Chiu"
+    - Greenburg
+    - 
+    - 
+    - 
+    - 
+    - Spanish Christmas
+    - '2015-07-08 20:34:35.979366'
+    - '2015-07-08 20:34:35.979366'
+  - - '303'
+    - '161'
+    - Through The Years
+    - Youmans, V./Allen
+    - 
+    - Allen, JD
+    - Heyman, E.
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.98053'
+    - '2015-07-08 20:34:35.98053'
+  - - '304'
+    - '127'
+    - Tinsley Isle
+    - "/Darby"
+    - 
+    - 
+    - 
+    - TTBB
+    - SOTS
+    - '2015-07-08 20:34:35.981774'
+    - '2015-07-08 20:34:35.981774'
+  - - '305'
+    - '324'
+    - Tis Winter Now
+    - Evans
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.983042'
+    - '2015-07-08 20:34:35.983042'
+  - - '306'
+    - '325'
+    - Tis Winter Now
+    - Evans
+    - 
+    - 
+    - 
+    - 
+    - Christmas
+    - '2015-07-08 20:34:35.984289'
+    - '2015-07-08 20:34:35.984289'
+  - - '307'
+    - '378'
+    - Toccata of Praise
+    - Martin, Joseph
+    - 
+    - 
+    - 
+    - TTBB
+    - Anthem
+    - '2015-07-08 20:34:35.985455'
+    - '2015-07-08 20:34:35.985455'
+  - - '308'
+    - '125'
+    - Tumbling Tumbleweeds
+    - Bob Nolan/Smalle
+    - 
+    - 
+    - 
+    - TTBB
+    - Cowboy Song Western
+    - '2015-07-08 20:34:35.986649'
+    - '2015-07-08 20:34:35.986649'
+  - - '309'
+    - '354'
+    - Turn Back Oh Man
+    - Holst, Gustav
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:35.987844'
+    - '2015-07-08 20:34:35.987844'
+  - - '310'
+    - '315'
+    - Tuxedo Junction
+    - arr. Nowak
+    - 
+    - 
+    - Feyne
+    - SATB
+    - Jazz
+    - '2015-07-08 20:34:35.989017'
+    - '2015-07-08 20:34:35.989017'
+  - - '311'
+    - '402'
+    - Two Sea Songs
+    - Vaughn-Williams, Ralph
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.99026'
+    - '2015-07-08 20:34:35.99026'
+  - - '312'
+    - '124'
+    - Tyler and Tippecanoe
+    - Jack Rogers
+    - 
+    - 
+    - 
+    - TTBB
+    - Campaign Song Patriotic
+    - '2015-07-08 20:34:35.991426'
+    - '2015-07-08 20:34:35.991426'
+  - - '313'
+    - '369'
+    - Up on the Roof
+    - Farrow, Larry
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.99263'
+    - '2015-07-08 20:34:35.99263'
+  - - '314'
+    - '369'
+    - Up the ladder to the roof
+    - Farrow, Larry
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.993736'
+    - '2015-07-08 20:34:35.993736'
+  - - '315'
+    - '226'
+    - Veni Sancti Spiritus
+    - Janacek/Richter
+    - 
+    - 
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:35.995028'
+    - '2015-07-08 20:34:35.995028'
+  - - '316'
+    - '120'
+    - Viva Tutti
+    - "/Hunter"
+    - ''
+    - HUNTER, R.
+    - ''
+    - TTB
+    - Art Song
+    - '2015-07-08 20:34:35.996238'
+    - '2015-08-06 04:28:52.1885'
+  - - '317'
+    - '39'
+    - Walk right in
+    - arr. McGilvrey
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:35.997434'
+    - '2015-07-08 20:34:35.997434'
+  - - '318'
+    - '99'
+    - Walking Down to Washington
+    - ARR. JACK ROGERS
+    - 
+    - 
+    - 
+    - TTBB
+    - PROTEST SONG 60'S
+    - '2015-07-08 20:34:35.998663'
+    - '2015-07-08 20:34:35.998663'
+  - - '319'
+    - '126'
+    - We have Crossed the Equator Again
+    - Schicklele
+    - 
+    - 
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:35.999882'
+    - '2015-07-08 20:34:35.999882'
+  - - '320'
+    - '187'
+    - We Sail The Ocean Blue
+    - Sullivan
+    - 
+    - 
+    - Gilbert
+    - TTBB
+    - Operetta
+    - '2015-07-08 20:34:36.001463'
+    - '2015-07-08 20:34:36.001463'
+  - - '321'
+    - '209'
+    - We Wish You A Merry Christmas
+    - Jack Rogers
+    - 
+    - 
+    - 
+    - SATB
+    - Christmas
+    - '2015-07-08 20:34:36.0026'
+    - '2015-07-08 20:34:36.0026'
+  - - '322'
+    - '97'
+    - Whale of a Tale
+    - HOFFMAN, A./WILSON
+    - 
+    - 
+    - WILSON, H.
+    - 
+    - TTBB
+    - '2015-07-08 20:34:36.003853'
+    - '2015-07-08 20:34:36.003853'
+  - - '323'
+    - '61'
+    - What Shall We Do with the Drunken Sailor
+    - arr. Tolleson
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:36.005297'
+    - '2015-07-08 20:34:36.005297'
+  - - '324'
+    - '232'
+    - When Good Fellows Get Together
+    - Bullard
+    - 
+    - 
+    - 
+    - TTBB
+    - Drinking Song
+    - '2015-07-08 20:34:36.006589'
+    - '2015-07-08 20:34:36.006589'
+  - - '325'
+    - '218'
+    - When My Baby Smile at Me
+    - Jack Rogers
+    - 
+    - 
+    - 
+    - TTBB
+    - Swing
+    - '2015-07-08 20:34:36.007838'
+    - '2015-07-08 20:34:36.007838'
+  - - '326'
+    - '42'
+    - When My Baby Smiles at Me
+    - arr. Ades
+    - 
+    - Ades
+    - 
+    - TTBB
+    - Barbershop
+    - '2015-07-08 20:34:36.00906'
+    - '2015-07-08 20:34:36.00906'
+  - - '327'
+    - '207'
+    - When You Wish Upon a Star
+    - Harline
+    - 
+    - 
+    - Washington
+    - TTBB
+    - Barbershop
+    - '2015-07-08 20:34:36.010341'
+    - '2015-07-08 20:34:36.010341'
+  - - '328'
+    - '311'
+    - When You Wish Upon a Star
+    - Rogers
+    - 
+    - 
+    - 
+    - TTBB
+    - Movie Tune
+    - '2015-07-08 20:34:36.01166'
+    - '2015-07-08 20:34:36.01166'
+  - - '329'
+    - '113'
+    - Where Or When
+    - RODGER, R./Stickles
+    - 
+    - 
+    - HART. L.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.012899'
+    - '2015-07-08 20:34:36.012899'
+  - - '330'
+    - '288'
+    - Whiffenpoof Song
+    - Galloway
+    - 
+    - 
+    - 
+    - TTBB
+    - Traditional
+    - '2015-07-08 20:34:36.014171'
+    - '2015-07-08 20:34:36.014171'
+  - - '331'
+    - '282'
+    - Whisky in the Jar
+    - Schmit
+    - 
+    - 
+    - 
+    - TTBB
+    - Irish Folk Song
+    - '2015-07-08 20:34:36.01534'
+    - '2015-07-08 20:34:36.01534'
+  - - '332'
+    - '389'
+    - Whisper, Whisper
+    - Althouse, Jay
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.016565'
+    - '2015-07-08 20:34:36.016565'
+  - - '333'
+    - '115'
+    - White Christmas
+    - BERLIN/James
+    - 
+    - James
+    - BERLIN
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.01778'
+    - '2015-07-08 20:34:36.01778'
+  - - '334'
+    - '303'
+    - White Christmas
+    - Berlin/Kirby Shaw
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.019127'
+    - '2015-07-08 20:34:36.019127'
+  - - '335'
+    - '111'
+    - Widerspruch
+    - SCHUBERT, F./Parker
+    - 
+    - SHAW, R.
+    - SEIDL - PARKER
+    - TTBB
+    - German Lieder
+    - '2015-07-08 20:34:36.020321'
+    - '2015-07-08 20:34:36.020321'
+  - - '336'
+    - '393'
+    - Will the Circle be Unbroken
+    - Gabriel/Moore
+    - 
+    - 
+    - 
+    - TTB
+    - Sacred
+    - '2015-07-08 20:34:36.02163'
+    - '2015-07-08 20:34:36.02163'
+  - - '337'
+    - '401'
+    - Will Ye No Come Back Again
+    - Warrell, Arthur
+    - 
+    - 
+    - 
+    - TTBB
+    - Scotish Love Song
+    - '2015-07-08 20:34:36.02287'
+    - '2015-07-08 20:34:36.02287'
+  - - '338'
+    - '114'
+    - Winter Song
+    - BULLARD, F.
+    - 
+    - 
+    - HOVEY
+    - TTBB
+    - Glee Club Chous
+    - '2015-07-08 20:34:36.024107'
+    - '2015-07-08 20:34:36.024107'
+  - - '339'
+    - '351'
+    - Witness
+    - Shaw, Kirby
+    - 
+    - 
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:36.025296'
+    - '2015-07-08 20:34:36.025296'
+  - - '340'
+    - '117'
+    - God Rest Ye Merry Gentlemen
+    - Traditional/Kern
+    - ''
+    - Mark Riese
+    - ''
+    - TTBB, Piano
+    - Christmas
+    - '2015-07-08 20:34:36.026651'
+    - '2015-10-05 23:49:31.240345'
+  - - '341'
+    - '310'
+    - Sunny Side of the Street
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:36.028034'
+    - '2015-07-08 20:34:36.028034'
+  - - '342'
+    - '90'
+    - Straw Carol (The)
+    - FRIESEN/EKLUND/Bolks
+    - 
+    - 
+    - FRIESEN/EKLUND
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.029375'
+    - '2015-07-08 20:34:36.029375'
+  - - '343'
+    - '254'
+    - A-Roving
+    - "/Bartholomew"
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:36.030683'
+    - '2015-07-08 20:34:36.030683'
+  - - '344'
+    - '210'
+    - Carol of the Bells
+    - Leontovich/Wilhousky
+    - 
+    - Wilhousky, Peter
+    - Wilhousky, Peter
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.03194'
+    - '2015-07-08 20:34:36.03194'
+  - - '345'
+    - '61'
+    - A-Roving
+    - arr. Tolleson
+    - 
+    - TOLLESON, W.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:36.03321'
+    - '2015-07-08 20:34:36.03321'
+  - - '346'
+    - '180'
+    - Battle Of Jericho, The
+    - Bartholomew
+    - 
+    - Bartholomew, M.
+    - 
+    - ttbb
+    - Spiritual
+    - '2015-07-08 20:34:36.034396'
+    - '2015-07-08 20:34:36.034396'
+  - - '347'
+    - '217'
+    - Believe Me If All Those Endearing Young Charms
+    - MOORE, T.
+    - 
+    - 
+    - 
+    - TTBB
+    - Irish Folk Song
+    - '2015-07-08 20:34:36.035536'
+    - '2015-07-08 20:34:36.035536'
+  - - '348'
+    - '227'
+    - Bendemeer's Stream
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Irish Folk Song
+    - '2015-07-08 20:34:36.03665'
+    - '2015-07-08 20:34:36.03665'
+  - - '349'
+    - '250'
+    - Bier Her
+    - 
+    - 
+    - 
+    - 
+    - 
+    - Drinking Song
+    - '2015-07-08 20:34:36.037812'
+    - '2015-07-08 20:34:36.037812'
+  - - '350'
+    - '8'
+    - Black is the Color of my True Love's Hair
+    - arr. Churchill
+    - 
+    - CHURCHILL
+    - 
+    - TTBB
+    - Folk Song
+    - '2015-07-08 20:34:36.03908'
+    - '2015-07-08 20:34:36.03908'
+  - - '351'
+    - '260'
+    - Blow the Candles Out
+    - "/Richardson"
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:36.040296'
+    - '2015-07-08 20:34:36.040296'
+  - - '352'
+    - '39'
+    - Blowin' in the Wind
+    - Dillion
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:36.041555'
+    - '2015-07-08 20:34:36.041555'
+  - - '353'
+    - '270'
+    - Blue Skies
+    - Berlin/Boutelle
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:36.042822'
+    - '2015-07-08 20:34:36.042822'
+  - - '354'
+    - '284'
+    - Blue Skies
+    - "/Gard"
+    - 
+    - 
+    - 
+    - 
+    - Pop Barber Shop
+    - '2015-07-08 20:34:36.044014'
+    - '2015-07-08 20:34:36.044014'
+  - - '355'
+    - '81'
+    - Blue Suede Shoes
+    - McGilvrey
+    - 
+    - Lojeski
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:36.045208'
+    - '2015-07-08 20:34:36.045208'
+  - - '356'
+    - '9'
+    - Boar's Head Carol (The)
+    - arr. Parker-Shaw
+    - 
+    - SHAW, R.
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.046369'
+    - '2015-07-08 20:34:36.046369'
+  - - '357'
+    - '394'
+    - Boat Song
+    - Schubert/Dawson, Clay
+    - 
+    - 
+    - 
+    - TTBB
+    - German Lieder
+    - '2015-07-08 20:34:36.047655'
+    - '2015-07-08 20:34:36.047655'
+  - - '358'
+    - '13'
+    - Bridge over troubled waters
+    - SIMON, P.
+    - 
+    - 
+    - SIMON, P
+    - TTBB
+    - FOLK SONG
+    - '2015-07-08 20:34:36.048845'
+    - '2015-07-08 20:34:36.048845'
+  - - '359'
+    - '215'
+    - Brother James Air
+    - "/Davies"
+    - 
+    - 
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:36.050259'
+    - '2015-07-08 20:34:36.050259'
+  - - '360'
+    - '12'
+    - Brothers, Sing On!
+    - GREIG, E./MCKINNEY
+    - 
+    - MC KINNEY, H.
+    - DALMAS
+    - TTBB
+    - SECULAR
+    - '2015-07-08 20:34:36.051513'
+    - '2015-07-08 20:34:36.051513'
+  - - '361'
+    - '176'
+    - Camelot
+    - Loewe, F./Smith
+    - 
+    - 
+    - Lerner, A.
+    - TB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.052794'
+    - '2015-07-08 20:34:36.052794'
+  - - '362'
+    - '201'
+    - Anchor's Aweigh
+    - "/Allen "
+    - ''
+    - Allen, J.
+    - ''
+    - TTBB
+    - Chantey Patriotic
+    - '2015-07-08 20:34:36.054077'
+    - '2015-08-06 04:17:20.975654'
+  - - '363'
+    - '193'
+    - Cantate
+    - Petoni
+    - 
+    - 
+    - 
+    - 
+    - Sacred
+    - '2015-07-08 20:34:36.055178'
+    - '2015-07-08 20:34:36.055178'
+  - - '364'
+    - '14'
+    - Cantique de Noel (Oh Holy Night)
+    - ADAM, A.
+    - 
+    - THORNE, F.
+    - ADAM, A.
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.056405'
+    - '2015-07-08 20:34:36.056405'
+  - - '365'
+    - '366'
+    - Child of God
+    - Crocker, Emily
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas Spiritual
+    - '2015-07-08 20:34:36.057639'
+    - '2015-07-08 20:34:36.057639'
+  - - '366'
+    - '367'
+    - Child of God
+    - Goodrich, H
+    - 
+    - 
+    - 
+    - TTBB
+    - Christmas Spiritual
+    - '2015-07-08 20:34:36.058827'
+    - '2015-07-08 20:34:36.058827'
+  - - '367'
+    - '107'
+    - Ching-a-ring Chaw
+    - COPLAND/FINE
+    - 
+    - COPELAND, A.
+    - 
+    - TTBB
+    - MINSTREL Song
+    - '2015-07-08 20:34:36.059944'
+    - '2015-07-08 20:34:36.059944'
+  - - '368'
+    - '171'
+    - Chorus Line - Highlights
+    - Hamlisch, M./Simeone
+    - 
+    - 
+    - Kleban, E.
+    - SATB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.061216'
+    - '2015-07-08 20:34:36.061216'
+  - - '369'
+    - '203'
+    - Chorus of The Pirates
+    - Sullivan/Treharnd
+    - 
+    - Treharne, B.
+    - Gilbert
+    - TTBB
+    - G&S
+    - '2015-07-08 20:34:36.062434'
+    - '2015-07-08 20:34:36.062434'
+  - - '370'
+    - '17'
+    - Christmas Calypso
+    - JONES, R./YALANIS
+    - 
+    - YALANIS, T.
+    - JONES, R.
+    - SATB
+    - Christmas
+    - '2015-07-08 20:34:36.063717'
+    - '2015-07-08 20:34:36.063717'
+  - - '371'
+    - '149'
+    - Civil War Medley
+    - Root/Richardson
+    - 
+    - 
+    - 
+    - TTBB
+    - Patriotic
+    - '2015-07-08 20:34:36.065022'
+    - '2015-07-08 20:34:36.065022'
+  - - '372'
+    - '28'
+    - Deep River
+    - arr. Burleigh
+    - 
+    - 
+    - 
+    - TTBB
+    - Spiritual
+    - '2015-07-08 20:34:36.066214'
+    - '2015-07-08 20:34:36.066214'
+  - - '373'
+    - '30'
+    - Die Rose Stand im Tau
+    - SCHUMANN, R.
+    - 
+    - STONE, K.
+    - RUKERT, F.
+    - TTBBB
+    - German Lieder
+    - '2015-07-08 20:34:36.067572'
+    - '2015-07-08 20:34:36.067572'
+  - - '374'
+    - '29'
+    - Do You Hear What I Hear?
+    - arr. Simeone
+    - 
+    - SIMEONE, H.
+    - REGNEY & SHAYNE
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.068839'
+    - '2015-07-08 20:34:36.068839'
+  - - '375'
+    - '234'
+    - Donovans, The
+    - Needham/Simeone
+    - 
+    - 
+    - 
+    - 
+    - Irish  Folk Song
+    - '2015-07-08 20:34:36.07009'
+    - '2015-07-08 20:34:36.07009'
+  - - '376'
+    - '81'
+    - Don't Be Cruel
+    - McGilvrey
+    - 
+    - Lojeski
+    - 
+    - TBB
+    - Pop
+    - '2015-07-08 20:34:36.071318'
+    - '2015-07-08 20:34:36.071318'
+  - - '377'
+    - '307'
+    - Don't Get Around Much Anymore
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Swing
+    - '2015-07-08 20:34:36.072509'
+    - '2015-07-08 20:34:36.072509'
+  - - '378'
+    - '72'
+    - Don't Nobody Bring Me No Bad News
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.073579'
+    - '2015-07-08 20:34:36.073579'
+  - - '379'
+    - '27'
+    - Down in the Valley
+    - MEAD
+    - 
+    - MEAD, G.
+    - 
+    - TTBB
+    - Folk SONG
+    - '2015-07-08 20:34:36.074708'
+    - '2015-07-08 20:34:36.074708'
+  - - '380'
+    - '163'
+    - Dream
+    - 
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:36.075997'
+    - '2015-07-08 20:34:36.075997'
+  - - '381'
+    - '91'
+    - Gently, Johnny, My Gigalo
+    - arr/William Hall
+    - 
+    - HALL, W.
+    - UNKNOWN
+    - TTBB
+    - English Folk song
+    - '2015-07-08 20:34:36.07738'
+    - '2015-07-08 20:34:36.07738'
+  - - '382'
+    - '130'
+    - Get Me to the Church On Time
+    - LERNER, A./Stickles
+    - 
+    - Lojeski
+    - LOWE, F.
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.07885'
+    - '2015-07-08 20:34:36.07885'
+  - - '383'
+    - '25'
+    - Good-Bye, Fare Thee Well
+    - arr. Luboff
+    - 
+    - LUBOFF, N.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:36.080101'
+    - '2015-07-08 20:34:36.080101'
+  - - '384'
+    - '37'
+    - Goodnight Sweetheart
+    - Lowjeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:36.081326'
+    - '2015-07-08 20:34:36.081326'
+  - - '385'
+    - '373'
+    - Gotta Party, Gloria, The Heat is On, You Really Got Me
+    - Lojeski
+    - 
+    - 
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:36.082533'
+    - '2015-07-08 20:34:36.082533'
+  - - '386'
+    - '39'
+    - Hey Lidi, Lidi Low
+    - 
+    - 
+    - McGilvrey
+    - 
+    - TTBB
+    - Pop
+    - '2015-07-08 20:34:36.08392'
+    - '2015-07-08 20:34:36.08392'
+  - - '387'
+    - '290'
+    - Homeward Bound
+    - "/Strommen"
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:36.085099'
+    - '2015-07-08 20:34:36.085099'
+  - - '388'
+    - '112'
+    - If I Were a Rich Man
+    - BOCK, J./Artman
+    - 
+    - ARTMAN, R.
+    - HARNICK, S.
+    - 
+    - Broadway Musical
+    - '2015-07-08 20:34:36.086233'
+    - '2015-07-08 20:34:36.086233'
+  - - '389'
+    - '208'
+    - Lord's Prayer
+    - Joe Allen
+    - 
+    - Allen, J.
+    - 
+    - TTBB
+    - Sacred
+    - '2015-07-08 20:34:36.087587'
+    - '2015-07-08 20:34:36.087587'
+  - - '390'
+    - '314'
+    - Moonlight in Vermont
+    - Rogers
+    - 
+    - 
+    - 
+    - 
+    - Pop
+    - '2015-07-08 20:34:36.088819'
+    - '2015-07-08 20:34:36.088819'
+  - - '391'
+    - '281'
+    - Mother Machree
+    - Ball/Gentry
+    - 
+    - 
+    - 
+    - 
+    - Irish Folk Song
+    - '2015-07-08 20:34:36.089975'
+    - '2015-07-08 20:34:36.089975'
+  - - '392'
+    - '318'
+    - O Holy Night
+    - Adophe Adam
+    - 
+    - 
+    - 
+    - SATB
+    - Christmas
+    - '2015-07-08 20:34:36.091181'
+    - '2015-07-08 20:34:36.091181'
+  - - '393'
+    - '356'
+    - Old Irish Blessing
+    - Noonan/Goodrich
+    - 
+    - 
+    - 
+    - TTBB
+    - Irish Folk Song
+    - '2015-07-08 20:34:36.092466'
+    - '2015-07-08 20:34:36.092466'
+  - - '394'
+    - '45'
+    - Old Man Noah
+    - Bartholomew
+    - 
+    - BARTHOLOMEW, M.
+    - 
+    - TTBB
+    - Chantey
+    - '2015-07-08 20:34:36.093657'
+    - '2015-07-08 20:34:36.093657'
+  - - '395'
+    - '43'
+    - Once Upon a Time
+    - Strouse
+    - 
+    - Simon
+    - Adams
+    - TTBB
+    - Broadway Musical
+    - '2015-07-08 20:34:36.094894'
+    - '2015-07-08 20:34:36.094894'
+  - - '396'
+    - '403'
+    - Over the Sea to Skye
+    - Porterfield, Sherri
+    - 
+    - 
+    - 
+    - TTB
+    - Chantey
+    - '2015-07-08 20:34:36.096146'
+    - '2015-07-08 20:34:36.096146'
+  - - '397'
+    - '0'
+    - Pianist Folder with Single Copies
+    - 
+    - 
+    - Wilhousky
+    - 
+    - 
+    - 
+    - '2015-07-08 20:34:36.097317'
+    - '2015-07-08 20:34:36.097317'
+  - - '398'
+    - '372'
+    - Sailors Song
+    - DeWitt, Patty
+    - 
+    - 
+    - 
+    - TTBB
+    - Art Song
+    - '2015-07-08 20:34:36.098649'
+    - '2015-07-08 20:34:36.098649'
+  - - '399'
+    - '52'
+    - San Francisco
+    - KAPER/JURMANN
+    - 
+    - 
+    - KAHN, G.
+    - Solo
+    - Movie Score
+    - '2015-07-08 20:34:36.099876'
+    - '2015-07-08 20:34:36.099876'
+  - - '400'
+    - '294'
+    - Sick of the Songs of the Sea
+    - Bennett
+    - 
+    - 
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:36.101138'
+    - '2015-07-08 20:34:36.101138'
+  - - '401'
+    - '56'
+    - Silent Night
+    - Gruber
+    - 
+    - 
+    - Mohr
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.10235'
+    - '2015-07-08 20:34:36.10235'
+  - - '402'
+    - '57'
+    - Silent Night
+    - Gruber/Thorne
+    - 
+    - Thorne
+    - 
+    - TTBB
+    - Christmas
+    - '2015-07-08 20:34:36.103592'
+    - '2015-07-08 20:34:36.103592'
+  - - '403'
+    - '62'
+    - Sleigh Ride
+    - ANDERSON/Ades
+    - ''
+    - ANDERSON
+    - ANDERSON
+    - TTB
+    - Christmas
+    - '2015-07-08 20:34:36.104924'
+    - '2015-08-14 23:09:55.134707'
+  - - '404'
+    - '71'
+    - Standchen
+    - SCHUBERT, F./Parker-Shaw
+    - 
+    - SHAW, R.
+    - GRILLPARZER - PARKER
+    - TTBB
+    - German Lieder
+    - '2015-07-08 20:34:36.106278'
+    - '2015-07-08 20:34:36.106278'
+  - - '405'
+    - '167'
+    - Still, Still, Still
+    - "/Wetzler"
+    - 
+    - Schmit, C.
+    - 
+    - TT
+    - German Christmas Carol
+    - '2015-07-08 20:34:36.111166'
+    - '2015-07-08 20:34:36.111166'
+  - - '406'
+    - '279'
+    - Stille Nacht (Silent Night)
+    - Gruber
+    - 
+    - 
+    - 
+    - 
+    - Christmas Unison
+    - '2015-07-08 20:34:36.112343'
+    - '2015-07-08 20:34:36.112343'
+  - - '407'
+    - '221'
+    - Swansea Town
+    - 
+    - 
+    - SHAW, R.
+    - 
+    - 
+    - Chantey
+    - '2015-07-08 20:34:36.113562'
+    - '2015-07-08 20:34:36.113562'
+  - - '408'
+    - '256'
+    - Wunderbar
+    - Porter/Allan
+    - 
+    - 
+    - 
+    - TTBB
+    - Broadway Show
+    - '2015-07-08 20:34:36.114798'
+    - '2015-07-08 20:34:36.114798'
+  - - '409'
+    - '1075'
+    - O Canada
+    - ''
+    - ''
+    - Herb Goodrich
+    - ''
+    - TTBB with Trumpet
+    - Patriotic Anthem
+    - '2015-07-08 20:45:13.483442'
+    - '2015-09-24 18:48:21.826351'
+  - - '416'
+    - '1076'
+    - Christmas Night
+    - Michael Farr
+    - ''
+    - ''
+    - ''
+    - TTBB
+    - Sea Chantey Christmas
+    - '2015-08-14 04:06:46.540078'
+    - '2015-08-14 04:06:46.540078'
+  - - '417'
+    - '1077'
+    - Forever King
+    - Dan Forrest, Johanna Anderson
+    - ''
+    - ''
+    - ''
+    - TTBB
+    - Religious, Easter, Sacred
+    - '2015-08-14 20:55:32.353817'
+    - '2015-08-14 21:17:04.321135'
+  - - '418'
+    - '1078'
+    - Crazy Little Thing Called Love
+    - Freddie Mercury
+    - ''
+    - Chris Peterson
+    - ''
+    - TTBB
+    - Pop
+    - '2015-08-14 21:51:50.321674'
+    - '2015-08-14 21:51:50.321674'
+  - - '419'
+    - '1079'
+    - Guys Got 2 Sing
+    - Kirby Shaw
+    - ''
+    - ''
+    - ''
+    - TTBB
+    - Pop, Choral
+    - '2015-08-14 21:56:56.076659'
+    - '2015-08-14 21:56:56.076659'
+  - - '421'
+    - '1080'
+    - How Great Thou Art
+    - Stuart K. Hine
+    - ''
+    - Dan Forrest
+    - ''
+    - TTBB
+    - Religious, Easter, Sacred
+    - '2015-08-14 22:02:53.296029'
+    - '2015-08-14 22:02:53.296029'
+  - - '422'
+    - '1081'
+    - Old Time Religion
+    - Traditional
+    - ''
+    - Herb Goodrich
+    - Moses Hogan
+    - STBB, Solo
+    - Folk, Traditional
+    - '2015-08-14 23:04:24.139505'
+    - '2015-08-14 23:04:24.139505'
+  - - '423'
+    - '1082'
+    - I'll Be Seeing You
+    - Dallas Vocal Majority
+    - ''
+    - Jim Clancy
+    - ''
+    - TTBB
+    - Pop, Oldies
+    - '2015-08-14 23:06:37.990663'
+    - '2015-08-14 23:29:10.564846'
+  - - '424'
+    - '1083'
+    - One Faith, One Hope, One Lord
+    - Craig Courtney
+    - ''
+    - ''
+    - ''
+    - TTBB
+    - Sacred
+    - '2015-08-14 23:08:45.387749'
+    - '2015-08-14 23:08:45.387749'
+  - - '425'
+    - '1084'
+    - Silhouettes
+    - FrankC. Slay, JR and Bob Crewe
+    - ''
+    - Ed Lojeski
+    - ''
+    - TTBB
+    - Pop
+    - '2015-08-14 23:11:37.046134'
+    - '2015-08-14 23:11:37.046134'
+  - - '426'
+    - '1085'
+    - San Francisco
+    - Traditional/Herb Goodrich
+    - ''
+    - Herb Goodrich
+    - ''
+    - TTBB
+    - Sea Chantey
+    - '2015-08-14 23:20:41.178801'
+    - '2015-08-14 23:21:24.84466'
+  - - '427'
+    - '1086'
+    - Softly as I Leave You
+    - A. de Vita and H. Shaper
+    - ''
+    - ''
+    - ''
+    - TTBB, Piano
+    - Ballad, a sad song
+    - '2015-08-14 23:22:52.133088'
+    - '2015-08-14 23:22:52.133088'
+  - - '428'
+    - '1087'
+    - WWI Medley
+    - George M. Cohan
+    - ''
+    - Herb Goodrich
+    - ''
+    - TTBB, Piano
+    - Patriotic
+    - '2015-08-14 23:35:20.945623'
+    - '2015-08-14 23:35:20.945623'
+  - - '429'
+    - '1088'
+    - I Sing, You Sing
+    - Anders Edenroth
+    - ''
+    - ''
+    - ''
+    - SATBB
+    - Choral, Pop, A Cappella
+    - '2015-08-14 23:37:24.915477'
+    - '2015-08-14 23:37:24.915477'
+  - - '430'
+    - '1089'
+    - Last Day of Summer
+    - Hardy Hemphill
+    - ''
+    - Dato
+    - Goodrich
+    - Solo TB Piano
+    - pop
+    - '2015-09-23 01:29:37.539161'
+    - '2015-09-23 01:29:37.539161'
+  - - '431'
+    - '1090'
+    - Star Spangled Banner
+    - Francis Scott Key
+    - ''
+    - Goodrich
+    - ''
+    - TTBB
+    - Patriotic
+    - '2015-09-24 18:40:09.445634'
+    - '2015-09-24 18:40:09.445634'
+  - - '432'
+    - '1091'
+    - Turn Around, Look at Me
+    - Jerry Capehart
+    - ''
+    - Patti Drennan
+    - ''
+    - TTBB Piano
+    - Pop
+    - '2015-09-24 19:37:42.419918'
+    - '2015-09-24 19:37:42.419918'
+  - - '433'
+    - '1092'
+    - I Get Around
+    - Brian Wilson, Mike Love
+    - ''
+    - Ed Lojeski
+    - ''
+    - TTBB, Piano
+    - Pop, Rock
+    - '2015-09-24 20:35:04.819651'
+    - '2015-09-24 20:35:04.819651'
+  - - '434'
+    - '1093'
+    - Zion Hears the Watchment Singing
+    - Buxtehude, Nicolai
+    - ''
+    - Emily Crocker
+    - ''
+    - TB Piano
+    - Christmas
+    - '2015-10-05 23:52:18.30319'
+    - '2015-10-05 23:52:18.30319'
+  - - '435'
+    - '1094'
+    - Christmas Eve in San Francisco
+    - Herb Goodrich, Leo Virgil, Laura Landgraf
+    - ''
+    - ''
+    - ''
+    - TB Piano
+    - Christmas
+    - '2015-10-05 23:53:48.821716'
+    - '2015-10-05 23:53:48.821716'
+  - - '436'
+    - '1095'
+    - Hark! the Herald Angels Sing
+    - Charles Wesley
+    - ''
+    - Felix Mendelssohn
+    - Dan Forrest
+    - SATB PP
+    - Christmas
+    - '2015-10-17 00:08:20.812992'
+    - '2015-10-17 00:08:20.812992'
+  - - '437'
+    - '1096'
+    - Hark! the Herald Angels Sing
+    - Charles Wesley
+    - ''
+    - Felix Mendelssohn
+    - Dan Forrest
+    - SATB PP
+    - Christmas
+    - '2015-10-17 02:03:00.407649'
+    - '2015-10-17 02:03:00.407649'
+
+---
+users:
+  columns:
+  - id
+  - username
+  - email
+  - password_digest
+  - phone_number
+  - created_at
+  - updated_at
+  - name
+  - voice
+  - remember_digest
+  - reset_digest
+  - reset_sent_at
+  records: 
+  - - '3'
+    - mikefarr
+    - mikefarr@mac.com
+    - "$2a$10$ogOtMn2NBj4YE2PXV8TVpOW1a29lnn06xa2RxpPqQJAU541jOG0vK"
+    - 415 297-3277
+    - '2015-09-29 23:15:22.483459'
+    - '2015-10-12 21:32:09.763639'
+    - Mike Farr
+    - Bass
+    - 
+    - "$2a$10$mhPB2wCfUmMDmkWIdvw/qe90wBqdBXxWw8DQbx9ABmA5x9RJ1QIIC"
+    - '2015-10-12 21:32:09.760963'
+  - - '4'
+    - herbgoodrich
+    - sfsinfonia@me.com
+    - "$2a$10$Ljj0XUJiw.42nrlN.xq7P.CxmDmqvVDul1SucNyGCD91g.5F/.Q9q"
+    - '4155199866'
+    - '2015-10-12 21:08:05.406016'
+    - '2015-10-12 21:08:05.406016'
+    - Herb Goodrich
+    - Tenor 1
+    - 
+    - 
+    - 
+  - - '5'
+    - damian
+    - damianmarhefka@gmail.com
+    - "$2a$10$hfQYzmPHznCTRi4/j1F5wuShG6RyT8THFMj9mY/wTm4hd4orhlPQW"
+    - '4156132740'
+    - '2015-10-12 21:16:38.445487'
+    - '2015-10-12 21:16:38.445487'
+    - Damian Marhefka
+    - Bass
+    - 
+    - 
+    - 
+  - - '6'
+    - jdnichols
+    - jdannnichols@yahoo.com
+    - "$2a$10$Xs5gptiev5pebvqll0OPaugGjHqGxXj0UIQXjLvKxMW9qn3qtQsdS"
+    - '4159240976'
+    - '2015-10-12 21:26:17.311216'
+    - '2015-10-12 21:26:17.311216'
+    - J. D. Nichols
+    - Baritone
+    - 
+    - 
+    - 
+  - - '7'
+    - beckyviebrock
+    - msviebrock@comcast.net
+    - "$2a$10$GA27DiGzD5riPR3R4Hi6b.J2KZdR4O7SQfQb44B/UYgc68YmYhW3e"
+    - '4153282625'
+    - '2015-10-12 21:30:04.326663'
+    - '2015-10-12 21:30:04.326663'
+    - Becky Viebrock
+    - Musician
+    - 
+    - 
+    - 

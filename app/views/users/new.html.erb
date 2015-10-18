@@ -1,0 +1,13 @@
+<br>
+
+<%= render partial: 'form',
+           :locals => { readonly: "",
+                        colorization: "blue inverted",
+                        title: "New User Signup",
+                        action_path: users_path,
+                        method: "post",
+                        hidden_method_tag: '<input type="hidden" name="_method" value="patch" />'} %>
+
+
+
+<!--action="<#%= performances_path %>/<#%= @performance.id %>"-->

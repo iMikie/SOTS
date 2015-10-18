@@ -1,0 +1,34 @@
+/*CSS for the partial used in index-search */
+
+.song-row {
+    background-color: #f4f4f4;
+    /*border: 1px solid #AAAAAA;*/
+    border-bottom: 1px solid #bbbbbb;
+    /*border-top: 1px solid #bbbbbb;*/
+    /*padding: -1px;*/
+    color: #3c4362;
+    height: 25px;
+    font: bold 12px Arial, Helvetica, sans-serif;
+}
+.title {
+    width: 250px;
+}
+.composer {
+    width: 180px;
+    max-width:180px;
+}
+.voicing {
+    width: 50px;
+}
+.category {
+    width: 165px;
+}
+.larger-work {
+    width: 105px;
+}
+.arranger-one {
+    width: 100px;
+}
+.arranger-two {
+    width: 100px;
+}

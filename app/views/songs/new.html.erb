@@ -1,0 +1,100 @@
+<div id="song-container">
+  <% if @song.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@song.errors.count, "error") %> prohibited this song from being saved:</h2>
+
+      <ul>
+        <% @song.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div id="left-column">
+    <div class="page-title">Edit Song Information:</div>
+
+    <div class="form-container">
+      <%= form_for @song do |f| %>
+
+        <!--Song Title-->
+        <div class="song-edit-div">
+          <%= f.label :title, 'Song Title:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :title, class: "song-edit-field bold-title", placeholder: "Title " %>
+        </div>
+
+        <!--Composer-->
+        <div class="song-edit-div">
+          <%= f.label :composer, "Composer:", class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :composer, class: "song-edit-field", placeholder: "Composer" %>
+        </div>
+
+        <!--Voicing-->
+        <div class="song-edit-div" id="song-voicing-div">
+          <%= f.label :voicing, 'Voicing:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :voicing, class: "song-edit-field", placeholder: "Voicing" %>
+        </div>
+
+        <!--Category-->
+        <div class="song-edit-div" id="song-category-div">
+          <%= f.label :category, 'Category:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :category, class: "song-edit-field", placeholder: "Category" %>
+        </div>
+
+        <!--Larger Work-->
+        <div class="song-edit-div" id="song-larger-work-div">
+          <%= f.label :larger_work, 'Larger Work:', class: "song-label" %><br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :larger_work, class: "song-edit-field", placeholder: "Name of larger work" %>
+        </div>
+
+        <!--First Arranger-->
+        <div class="song-edit-div" id="song-arranger-one-div">
+          <%= f.label :arranger_one, 'First Arranger:', class: "song-label" %>
+          <br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :arranger_one, class: "song-edit-field", placeholder: "First arranger" %>
+        </div>
+
+        <!--Second Arranger-->
+        <div class="song-edit-div" id="song-arranger-two-div">
+          <%= f.label :arranger_two, 'Second Arranger:', class: "song-label" %>
+          <br>
+          <%= image_tag("shadow_box2.png") %>
+          <%= f.text_field :arranger_two, class: "song-edit-field", placeholder: "Second arranger" %>
+        </div>
+
+        <%= f.hidden_field :song_number %>
+
+        <!--PDF-->
+        <div class="song-edit-div">
+          <%= f.label :pdf_file, 'Select Sheet Music PDF File:', class: "song-label" %>
+          <br>
+          <%= f.file_field :pdf_file %>
+        </div>
+        <br>
+        <!--MP3-->
+        <div class="song-edit-div mp3-pos">
+          <%= f.label :mp3_file, 'Select MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :mp3_file %>
+        </div>
+
+        <br>
+
+        <div class="actions">
+          <%= f.submit class: "green-button simple-button submit-song", value: 'Submit Song' %>
+        </div>
+      <% end %>
+    </div>
+    <div class="edit-button-pod">
+      <%= link_to 'Cancel', songs_path, class: "blue-button simple-button new-song-cancel-pos", id: "cancel-edit-song" %>
+
+      <br>
+    </div>
+  </div>
+
+</div>

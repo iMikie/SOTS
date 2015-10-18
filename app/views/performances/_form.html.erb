@@ -1,0 +1,290 @@
+<div class="ui container" id="user-edit-box">
+
+  <form class="ui form segment raised <%= colorization %>
+  <%= if @performance.errors.any? then 'error' end %> "
+        <% if @performance.title %>
+        action="<%= performances_path %>/<%= @performance.id %>" accept-charset="UTF-8" method="post">
+  <% else %>
+      action="<%= performances_path %>" accept-charset="UTF-8" method="post">
+  <% end %>
+
+  <!--ERROR MESSAGE <DIV>-->
+  <% if @performance.errors.any? %>
+  <div class="ui message">
+    <div class="header">Performance Error:</div>
+    <br>
+
+    <div class="error_explanation">
+      <%= pluralize(@performance.errors.count, "error") %> prohibited this performance from being saved:
+      <ul>
+        <% @performance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+      <br>
+      <br>
+    </div>
+  </div>
+  <% end %>
+
+  <h3 class="ui dividing header"><%= title %></h3>
+
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <% if @performance.title %>
+  <input type="hidden" name="_method" value="patch"/>
+  <% end %>
+
+  <div class="two fields">
+    <div class="field">
+      <label>Title</label>
+      <input placeholder="Name" name="performance[title]" value="<%= @performance.title %>" type="text" <%= readonly %>>
+    </div>
+
+    <div class="field">
+      <label>Date</label>
+      <input name="performance[date]" value="<%= @performance.date %>" type="date" <%= readonly %>>
+    </div>
+  </div>
+
+  <div class="two wide column">
+    <div class="field">
+      <label>Location and Notes</label>
+      <textarea placeholder="text " name="performance[location]" <%= readonly %>  rows="3"> <%= @performance.location %> </textarea>
+    </div>
+  </div>
+  <br>
+
+  <div class="four fields">
+    <div class=" field">
+      <label>Event Leader</label>
+      <input placeholder="Herb" name="performance[event_leader]" value="<%= @performance.event_leader %>" type="text"  <%= readonly %>>
+    </div>
+    <div class="field">
+      <label>Leader phone</label>
+      <input placeholder="415 555-1212" name="performance[leader_phone]" <%= readonly %> value="<%= @performance.leader_phone %>" type="tel">
+    </div>
+
+    <div class=" field">
+      <label>Call Time (Pacific)</label>
+      <input name="performance[call_time]" <%= readonly %> value="<%= @performance.call_time.strftime("%I:%M %p") %>" type="text">
+    </div>
+    <div class="field">
+      <label>Show Time (Pacific) </label>
+      <input name="performance[performance_time]" <%= readonly %> value="<%= @performance.performance_time.strftime("%I:%M %p") %>" type="text">
+    </div>
+  </div>
+
+  <% if readonly.empty? %>
+
+  <button class="ui button green icon labeled" type="submit">
+    <i class="icon edit"></i>
+    Submit
+  </button>
+
+  <button class="ui labeled  icon button grey">
+    <% if @performance.title %>
+      <a href=<%= performance_path %> >
+        Cancel
+      </a>
+    <% else %>
+      <a href=<%= performances_path %> >
+        Cancel
+      </a>
+    <% end %>
+    <i class="edit icon"></i>
+  </button>
+
+  <% else %>
+
+  <button class="ui labeled  icon button green">
+    <a href=" <%= "#{edit_performance_path}" %> ">
+      Edit
+    </a>
+    <i class="edit icon"></i>
+  </button>
+
+  <div class="ui labeled icon button blue" id="add-song-btn">
+    <i class="music icon"></i>
+    Add Song
+  </div>
+
+
+  <% end %>
+  </form>
+
+  <% if @performance.title %>
+
+    <form id="delete-performance" action="<%= performance_path %>" accept-charset="UTF-8" method="post" onsubmit="return confirm('Delete this performance?');">
+      <input type="hidden" name="_method" value="delete"/>
+      <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+      <button class="ui right floated button red icon labeled" type="submit" id="delete-button">
+        <i class="icon trash"></i>
+        Delete this Performance
+      </button>
+    </form>
+  <% end %>
+</div>
+
+<div class="ui modal" id="add-song">
+  <!--<i class="close icon"></i>-->
+
+  <div class="header">
+    Select a Song
+  </div>
+
+
+  <div class="image content">
+    <div class="ui small image">
+      <%= image_tag("thumb.png") %>
+    </div>
+
+    <div id="song-dialog" class="description">
+      <div class="ui ">Search for the song you want, select it and click Add.</div>
+
+      <form id="get-song" class="ui form  segment raised "
+            action="/songs/simple_search" accept-charset="UTF-8" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <input name="performance_id" value="<%= @performance.id %>" type="hidden">
+
+        <div class="two wide column">
+          <div class="field">
+            <label>Song Title</label>
+            <input placeholder="Title" name="title" type="text">
+          </div>
+        </div>
+
+
+        <div class="two fields">
+          <div class=" field">
+            <label>Composer</label>
+            <input type="text" placeholder="Handel" name="composer">
+          </div>
+          <div class=" field">
+            <label>Arranger</label>
+            <input type="text" placeholder="Goodrich" name="arranger_one">
+          </div>
+        </div>
+
+        <div class="actions">
+          <div class="ui black cancel button">
+            Cancel
+          </div>
+          <div class="approve ui positive right labeled icon button">
+            Search
+            <i class="search icon"></i>
+          </div>
+        </div>
+      </form>
+
+
+      <div class="ui center aligned container">
+        <div class="ui  segment raised" id="users-container">
+
+          Matching Songs
+          </h2>
+
+          <div class="ui container">
+            <div class="ui segment inverted blue">
+              <div class="ui left aligned three column grid" id="user-grid">
+                <div class=" column ">
+                  <h4>
+                    Song Title
+                  </h4>
+                </div>
+                <div class="column">
+                  <h4>
+                    <i class="pen icon"></i>
+                    Composer
+                  </h4>
+                </div>
+                <div class="column">
+                  <h4>
+                    <i class="music icon"></i>
+                    Arranger
+                  </h4>
+                </div>
+                <!--<div id="thin" class="one column row thin">-->
+                <!--<div class="column">-->
+                <!--<div class="ui divider"></div>-->
+                <!--</div>-->
+                <!--</div>-->
+              </div>
+            </div>
+
+            <div class="ui left aligned three column grid" id="returned-songs">
+
+              <p>some songs here</p>
+<!--look in performances.js, I had to do the modal in javascript-->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+<%= render partial: 'performance_songs'
+    # ,
+    #        :locals => { readonly: "readonly", colorization: "", title: "User Profile"}
+%>
+
+
+
+
+
+
+
+<!--<div class="input_box2">-->
+<!--<#%= form_for(@performance) do |f| %>-->
+<!--<#% if @performance.errors.any? %>-->
+<!--<div class="resource-instructions">-->
+<!--<h2><#%= pluralize(@performance.errors.count, "error") %> prohibited this performance from being saved:</h2>-->
+
+<!--<ul>-->
+<!--<#% @performance.errors.full_messages.each do |message| %>-->
+<!--<li><#%= message %></li>-->
+<!--<#% end %>-->
+<!--</ul>-->
+<!--</div>-->
+<!--<#% end %>-->
+
+<!--<div class="field">-->
+<!--<#%= f.label :title %><br>
+<!--<#%= f.text_field :title, class:'login_field' %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!-- <#%= f.label :date %><br>
+ <!--<#%= f.text_field :date, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!--  <#%= f.label :performance_time %><br>
+  <!--<#%= f.text_field :performance_time, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!-- <#%= f.label :call_time %><br>
+ <!--<#%= f.text_field :call_time, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!--   <#%= f.label :location %><br> -->
+<!--<#%= f.text_field :location, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!--  <#%= f.label :event_leader %><br> -->
+<!--<#%= f.text_field :event_leader, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="field">-->
+<!--  <#%= f.label :leader_phone %><br>
+  <!--<#%= f.text_field :leader_phone, class: "login_field" %>-->
+<!--</div>-->
+<!--<div class="actions">-->
+<!--<#%= f.submit class: "abut abut2" %>-->
+<!--</div>-->
+<!--<#% end %>-->
+<!--</div>-->

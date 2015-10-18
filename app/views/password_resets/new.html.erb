@@ -1,0 +1,38 @@
+<div id="user-edit-box" class="ui  segment" xmlns="http://www.w3.org/1999/html">
+
+  <div class="ui center aligned container">
+
+    <h3 class="ui  header">
+      <i class="circular small lock icon"></i>
+
+      Reset Password
+    </h3>
+  </div>
+
+  <form action=<%= password_resets_path %> class="ui form segment raised <%= if @error then 'error' end %> " method="post">
+  <div class="ui error message">
+    <div class="header">Login error:</div>
+    <ul class="list">
+      <li>If you haven't signed up yet, click the signup button.</li>
+      <li>Otherwise, try again</li>
+    </ul>
+  </div>
+
+  <div class="field">
+    <label>Email</label>
+    <input type="email" name="email" placeholder="you@example.com">
+  </div>
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <br>
+
+  <button class="ui button red icon labeled" type="submit">
+    <i class="icon edit"></i>
+    Reset
+  </button>
+  </form>
+  <p>
+    New SOT?
+    <%= link_to "(Sign up now!)", new_user_path %></label>
+  </p>
+
+</div>
