@@ -31,7 +31,7 @@ class SongsController < ApplicationController
   def show
     @song = current_song
     @amazonAWS_path = "#{ENV['AWS_SOTS_DIR_PATH']}#{@song.song_number}"
-    # @amazonAWS_path = "http://s3-us-west-1.amazonaws.com/stfyc-sots/#{@song.song_number}"
+    # @amazonAWS_path = "https://s3-us-west-1.amazonaws.com/stfyc-sots/#{@song.song_number}"
     render "songs/show"
   end
 
