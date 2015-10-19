@@ -13,5 +13,5 @@
 /tmp
 
 /.env
-# Ignore application configuration
+# Ignore application configuration for security
 /config/application.yml
