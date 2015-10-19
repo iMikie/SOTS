@@ -136,7 +136,7 @@ class SongsController < ApplicationController
 
   def handle_pdf_mp3(song_hash)
     song= (song_hash[:song_number]).to_s
-    path = Rails.root.join("public", "SOTS_Songs", song)
+    path = Rails.root.join("public", song)
     pdf_filename = path.to_s + ".pdf"
     mp3_filename = path.to_s + ".mp3"
 
