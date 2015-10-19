@@ -166,16 +166,16 @@
   <!-- end of left-edit-column-->
   <div class="pdf-right-column">
     <!--<#% path = Rails.root.join("public", "SOTS_Songs", "#{@song.song_number}").to_s %>-->
-    <% if url_exist?(@amazonAWS_path + ".mp3") %>
+    <% if url_exist?("http://" + @amazonAWS_path + ".mp3") %>
 
     <!--<#% if File.exist?(path+".mp3") %>-->
-      <audio src="<%= @amazonAWS_path %>.mp3" class="mp3-pos" type="audio/mpeg" controls>
+      <audio src="<%= 'https://' + @amazonAWS_path %>.mp3" class="mp3-pos" type="audio/mpeg" controls>
         Your browser does not support the audio element.
       </audio>
     <% end %>
     <!--<#% if File.exist?(path+".pdf") %>-->
-      <% if url_exist?(@amazonAWS_path + ".pdf") %>
-      <iframe src="<%= @amazonAWS_path %>.pdf" class="pdf">
+      <% if url_exist?("http://" + @amazonAWS_path + ".pdf") %>
+      <iframe src="<%= "https://" +@amazonAWS_path %>.pdf" class="pdf">
       </iframe>
     <% end %>
 
