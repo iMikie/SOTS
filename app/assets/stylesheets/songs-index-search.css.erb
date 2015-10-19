@@ -1,57 +1,135 @@
 /*CSS for the song index and search page */
 
 .song_search {
-    padding-left: 24px;
-    /*margin-bottom: 2em;*/
-    /*margin-left: 12px;*/
-    margin: auto;
-    padding-top: 1.5em;
-    width: 1045px;
-    height: 90px;
-    background-color: #EEEEEE;
-    color: #15355a;
-    font: bold 12px Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    /*border-bottom: 5px solid #bbbbbb;*/
+  padding-left: 24px;
+  /*margin-bottom: 2em;*/
+  /*margin-left: 12px;*/
+  margin: auto;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  width: 1045px;
+  height: 90px;
+  background-color: #EEEEEE;
+  color: #15355a;
+  font: bold 12px Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  /*border-bottom: 5px solid #bbbbbb;*/
+}
+
+.tablediv {
+  position: fixed;
+  top: 352px;
+  left: 50%;
+  margin-left: -523px;
+  background-color: #EEEEEE;
+  padding-top: 1em;
+  padding-left:1.5em;
+  width: 1047px;
+  border: 1px solid #aaaaaa;
+  /*margin-left: 12px;*/
+  overflow-y: scroll;
+  bottom: 3em;
+}
+
+.song_table {
+  width: 1000px;
+  padding: 1em;
+  border: 1px solid #aaaaaa;
+  /*background-color: #FFFFFF;*/
+  background: #f4f4f4;
+  /*background: linear-gradient(top, #efefef 0%, #919191 100%);*/
+  /*background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);*/
+  /*background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);*/
+  /*box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);*/
+  margin-left: 1.5em;
+}
+
+.song-container {
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  /*background-color: #336699;*/
+
+  max-width: 1100px;
+}
+
+.song-left_column {
+
+  margin-top: 1em;
+  width: 12em;
+  min-height: 20em;
+  font-family: HelveticaNeue, Helvetica, sans-serif;
+  margin-left: 3em;
+}
+
+/*.header {*/
+/*height: 5em;*/
+
+/*}*/
+
+.song-right_column {
+  min-width: 40em;
+}
+
+.pdf {
+  flex: auto;
+  min-width: 40em;
+  height: 50em;
 }
 
 .search-row-height {
-    height: 20px;
-    margin: -1px;
+  height: 20px;
+  margin: -1px;
 }
+
 .title-edit {
-    width: 250px;
+  width: 250px;
 }
+
 .composer-edit {
-    width: 175px;
+  width: 175px;
 }
+
 .voicing-edit {
-    width: 45px;
+  width: 45px;
 }
+
 .category-edit {
-    width: 160px;
+  width: 160px;
 }
+
 .larger-work-edit {
-    width: 100px;
+  width: 100px;
 }
+
 .arranger-one-edit {
-    width: 100px;
+  width: 110px;
 }
+
 .arranger-two-edit {
-    width: 100px;
+  width: 110px;
 }
+
 .PDF {
-    width: 120px;
+  width: 120px;
 }
+
 .search-button {
-    position: relative;
-    text-decoration: none;
-    margin-left: 14em;
-    top: -2em;
+  position: relative;
+  text-decoration: none;
+  margin-left: 14em;
+  top: -2em;
 }
+
 .song-heading {
-    background: #efefef;
-    text-align: left;
-    list-style: none;
+  background: #efefef;
+  text-align: left;
+  list-style: none;
+}
+
+.resource_table {
+  position: absolute;
+  height: 80%;
+  margin-bottom: 2em;
 }
