@@ -1,225 +1,232 @@
 #song-container {
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    /*background-color: #336699;*/
-    max-width: 1100px;
-    background-color: rgba(50, 50, 60, .3);
-    border: 1px solid rgba(0, 0, 0, .3);
-    padding-bottom: 1.5em;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  /*background-color: #336699;*/
+  max-width: 1100px;
+  background-color: rgba(50, 50, 60, .3);
+  border: 1px solid rgba(0, 0, 0, .3);
+  padding-bottom: 1.5em;
+  height: 880px;
 }
 
 #error_explanation {
-    color: #ffffff;
-    font: bold 12px 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+  color: #ffffff;
+  font: bold 12px 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 .page-title {
-    font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
-    font-size: 20px;
-    color: #eeeeee;
-    margin-top: 1em;
-    margin-left: 3em;
-    margin-bottom: 2em;
-    line-height: 110%;
+  font-family: 'HelveticaNeue-Medium', 'Helvetica Neue', 'sans-serif';
+  font-size: 20px;
+  color: #eeeeee;
+  margin-top: 1em;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  line-height: 110%;
 }
 
 #left-column {
-    width: 20em;
-    padding: .5em;
+  width: 20em;
+  padding: .5em;
 }
 
 #left-edit-column {
-    width: 20em;
-    padding: .5em;
-    display: none;
+  width: 20em;
+  padding: .5em;
+  display: none;
 }
 
 .pdf-right-column {
-    margin-left: 5em;
-    margin-top: 2em;
+  margin-left: 5em;
+  margin-top: 2em;
 }
 
 .mp3-pos {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .song-label {
-    margin-left: 0.5em;
-    font-family: 'HelveticaNeue-LightItalic', 'Helvetica Neue', 'sans-serif';
-    font-size: 13px;
-    color: #bbbbbb;
-    padding-bottom: 1px;
+  margin-left: 0.5em;
+  font-family: 'HelveticaNeue-LightItalic', 'Helvetica Neue', 'sans-serif';
+  font-size: 13px;
+  color: #bbbbbb;
+  padding-bottom: 1px;
 }
 
 .song-edit-div {
-    height: 4em;
-    width: 16.75em;
+  height: 4em;
+  width: 16.75em;
+}
+
+.pdf {
+  flex: auto;
+  min-width: 40em;
+  height: 55em;
 }
 
 .pdf-pos {
-    height: 6em;
+  height: 6em;
 }
 
 .song-noedit-field {
-    position: absolute;
-    width: 16.75em;
-    height: 1.5em;
-    margin-top: .75em;
-    padding-left: 1em;
-    font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
-    font-size: 14px;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    overflow-y: hidden;
-    overflow-x:scroll;
+  position: absolute;
+  width: 16.75em;
+  height: 1.5em;
+  margin-top: .75em;
+  padding-left: 1em;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
+  font-size: 14px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  overflow-y: hidden;
+  overflow-x: scroll;
 
 }
 
 .song-edit-field {
-    position: absolute;
-    width: 17.5em;
-    height: 2em;
-    margin-top: -3.35em;
-    margin-left: .4em;
-    padding-left: 1em;
-    font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
-    font-size: 14px;
-    border: none;
-    color: #555555;
+  position: absolute;
+  width: 17.5em;
+  height: 2em;
+  margin-top: -3.35em;
+  margin-left: .4em;
+  padding-left: 1em;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
+  font-size: 14px;
+  border: none;
+  color: #555555;
 
 }
 
 #song_mp3_file {
-    position: relative;
-    width: 17.5em;
-    height: 3.5em;
-    margin-top: .35em;
-    margin-left: .75em;
-    margin-bottom: .75em;
-    padding: 1em 1em .1em 1em;
-    font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
-    font-size: 14px;
-    border: none;
-    color: #ffffff;
-    background-color: rgba(256, 256, 256, 0.5);
+  position: relative;
+  width: 17.5em;
+  height: 3.5em;
+  margin-top: .35em;
+  margin-left: .75em;
+  margin-bottom: .75em;
+  padding: 1em 1em .1em 1em;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
+  font-size: 14px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(256, 256, 256, 0.5);
 
 }
 
 #song_pdf_file {
-    position: relative;
-    width: 17.5em;
-    height: 3.5em;
-    margin-top: .35em;
-    margin-left: .75em;
-    margin-bottom: 1.75em;
-    padding: 1em 1em .1em 1em;
-    font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
-    font-size: 14px;
-    border: none;
-    color: #ffffff;
-    background-color: rgba(256, 256, 256, 0.5);
+  position: relative;
+  width: 17.5em;
+  height: 3.5em;
+  margin-top: .35em;
+  margin-left: .75em;
+  margin-bottom: 1.75em;
+  padding: 1em 1em .1em 1em;
+  font-family: 'HelveticaNeue', 'Helvetica Neue', 'sans-serif';
+  font-size: 14px;
+  border: none;
+  color: #ffffff;
+  background-color: rgba(256, 256, 256, 0.5);
 
 }
 
 .song-num-pos {
-    margin-left: -8.75em;
-    margin-top: .35em;
-    width: 7.3em;
+  margin-left: -8.75em;
+  margin-top: .35em;
+  width: 7.3em;
 }
 
 .form-container {
-    width: 20em;
+  width: 20em;
 }
 
 /*button classes and id*/
 #button-pod {
-    position: absolute;
-    height: 10em;
-    margin-top: -16em;
-    margin-left: 15em;
+  position: absolute;
+  height: 10em;
+  margin-top: -16em;
+  margin-left: 15em;
 }
 
 #edit-button-pod {
-    height: 5em;
-    float: right;
-    margin-right: 1em;
+  height: 5em;
+  float: right;
+  margin-right: 1em;
 }
 
 .simple-button {
-    border: none;
-    color: #fff;
-    font: bold 11px Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    overflow: visible;
-    height: 29px;
-    line-height: 29px;
+  border: none;
+  color: #fff;
+  font: bold 11px Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  overflow: visible;
+  height: 29px;
+  line-height: 29px;
 }
 
 .red-button {
-    background: url("red_button.jpg") top left repeat-x;
+  background: url("red_button.jpg") top left repeat-x;
 }
 
 .green-button {
-    background: url("green_button.jpg") top left repeat-x;
+  background: url("green_button.jpg") top left repeat-x;
 }
 
 .blue-button {
-    background: url("blue_button.jpg") top left repeat-x;
+  background: url("blue_button.jpg") top left repeat-x;
 }
 
 .back-button-pos {
-    position: relative;
-    padding: .25em 1em .25em 1em;
-    text-decoration: none;
-    float: right;
+  position: relative;
+  padding: .25em 1em .25em 1em;
+  text-decoration: none;
+  float: right;
 }
 
 .edit-button-pos {
-    position: relative;
-    padding: .25em 1.25em .25em 1.25em;
-    text-decoration: none;
-    top: 1em;
-    float: right;
+  position: relative;
+  padding: .25em 1.25em .25em 1.25em;
+  text-decoration: none;
+  top: 1em;
+  float: right;
 }
 
 .delete-button-pos {
-    position: relative;
-    padding: .25em 1.25em .25em 1.25em;
+  position: relative;
+  padding: .25em 1.25em .25em 1.25em;
 
-    text-decoration: none;
-    top: 2em;
-    float: right;
+  text-decoration: none;
+  top: 2em;
+  float: right;
 }
 
 .cancel-button-pos {
-    position: absolute;
-    margin-top: -38em;
-    margin-left: 30em;
-    padding: .25em .75em .25em .75em;
-    /*margin-left: 10em;*/
-    text-decoration: none;
+  position: absolute;
+  margin-top: -38em;
+  margin-left: 30em;
+  padding: .25em .75em .25em .75em;
+  /*margin-left: 10em;*/
+  text-decoration: none;
 }
 
 .new-song-cancel-pos {
-    position: absolute;
-    margin-top: 22em;
-    margin-left: 1.25em;
-    padding: .25em .75em .25em .75em;
-    /*margin-left: 10em;*/
-    text-decoration: none;
+  position: absolute;
+  margin-top: 22em;
+  margin-left: 1.25em;
+  padding: .25em .75em .25em .75em;
+  /*margin-left: 10em;*/
+  text-decoration: none;
 }
 
 .submit-song {
-    position: absolute;
-    margin-top: -41em;
-    margin-left: 27em;
-    height: 29px;
-    padding: .25em .75em .25em .75em;
-    /*margin-left: 10em;*/
-    text-decoration: none;
+  position: absolute;
+  margin-top: -41em;
+  margin-left: 27em;
+  height: 29px;
+  padding: .25em .75em .25em .75em;
+  /*margin-left: 10em;*/
+  text-decoration: none;
 }

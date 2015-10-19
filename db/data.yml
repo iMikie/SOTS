@@ -59,6 +59,26 @@ performance_songs:
     - '434'
     - '2015-10-12 19:40:13.422127'
     - '2015-10-12 19:40:13.422127'
+  - - '12'
+    - '73'
+    - '438'
+    - '2015-10-19 20:31:07.443117'
+    - '2015-10-19 20:31:07.443117'
+  - - '13'
+    - '73'
+    - '436'
+    - '2015-10-19 20:59:36.744904'
+    - '2015-10-19 20:59:36.744904'
+  - - '14'
+    - '73'
+    - '439'
+    - '2015-10-19 22:05:44.166886'
+    - '2015-10-19 22:05:44.166886'
+  - - '15'
+    - '73'
+    - '437'
+    - '2015-10-19 22:05:56.800074'
+    - '2015-10-19 22:05:56.800074'
 
 ---
 songs:
@@ -121,15 +141,15 @@ songs:
     - '2015-07-08 20:34:35.586164'
   - - '6'
     - '22'
-    - Alfred Burt Carols Volume 1 Caroling, Caroling
+    - 'Alfred Burt Carols: Caroling, Caroling'
     - Alfred Burt
-    - 
-    - 
-    - 
+    - ''
+    - ''
+    - ''
     - TTBB
     - Christmas
     - '2015-07-08 20:34:35.587627'
-    - '2015-07-08 20:34:35.587627'
+    - '2015-10-19 21:52:42.854271'
   - - '7'
     - '191'
     - All the things you are
@@ -4761,17 +4781,6 @@ songs:
     - Christmas
     - '2015-10-05 23:53:48.821716'
     - '2015-10-05 23:53:48.821716'
-  - - '436'
-    - '1095'
-    - Hark! the Herald Angels Sing
-    - Charles Wesley
-    - ''
-    - Felix Mendelssohn
-    - Dan Forrest
-    - SATB PP
-    - Christmas
-    - '2015-10-17 00:08:20.812992'
-    - '2015-10-17 00:08:20.812992'
   - - '437'
     - '1096'
     - Hark! the Herald Angels Sing
@@ -4783,6 +4792,17 @@ songs:
     - Christmas
     - '2015-10-17 02:03:00.407649'
     - '2015-10-17 02:03:00.407649'
+  - - '439'
+    - '1098'
+    - O Come All Ye Faithful
+    - John Francis Wade
+    - ''
+    - Dan Forrest
+    - ''
+    - TTBB PP
+    - Christmas
+    - '2015-10-19 04:07:53.424001'
+    - '2015-10-19 04:07:53.424001'
 
 ---
 users:
@@ -4803,60 +4823,24 @@ users:
   - - '3'
     - mikefarr
     - mikefarr@mac.com
-    - "$2a$10$ogOtMn2NBj4YE2PXV8TVpOW1a29lnn06xa2RxpPqQJAU541jOG0vK"
+    - "$2a$10$SjI4L6v4uZkIyNmoJW8xo.rE7/mAIwOw8dzSr0cNcs9quNLZAMUI6"
     - 415 297-3277
     - '2015-09-29 23:15:22.483459'
-    - '2015-10-12 21:32:09.763639'
+    - '2015-10-19 02:20:56.481227'
     - Mike Farr
     - Bass
     - 
     - "$2a$10$mhPB2wCfUmMDmkWIdvw/qe90wBqdBXxWw8DQbx9ABmA5x9RJ1QIIC"
     - '2015-10-12 21:32:09.760963'
-  - - '4'
-    - herbgoodrich
+  - - '8'
+    - goodrich
     - sfsinfonia@me.com
-    - "$2a$10$Ljj0XUJiw.42nrlN.xq7P.CxmDmqvVDul1SucNyGCD91g.5F/.Q9q"
+    - "$2a$10$UwO2.Zx5r7ccTvClB3koQebR1WTeEpv2OcbFSzq5l2SmNHXnrZn4G"
     - '4155199866'
-    - '2015-10-12 21:08:05.406016'
-    - '2015-10-12 21:08:05.406016'
+    - '2015-10-19 21:46:05.339036'
+    - '2015-10-19 21:46:05.339036'
     - Herb Goodrich
-    - Tenor 1
-    - 
-    - 
-    - 
-  - - '5'
-    - damian
-    - damianmarhefka@gmail.com
-    - "$2a$10$hfQYzmPHznCTRi4/j1F5wuShG6RyT8THFMj9mY/wTm4hd4orhlPQW"
-    - '4156132740'
-    - '2015-10-12 21:16:38.445487'
-    - '2015-10-12 21:16:38.445487'
-    - Damian Marhefka
-    - Bass
-    - 
-    - 
-    - 
-  - - '6'
-    - jdnichols
-    - jdannnichols@yahoo.com
-    - "$2a$10$Xs5gptiev5pebvqll0OPaugGjHqGxXj0UIQXjLvKxMW9qn3qtQsdS"
-    - '4159240976'
-    - '2015-10-12 21:26:17.311216'
-    - '2015-10-12 21:26:17.311216'
-    - J. D. Nichols
-    - Baritone
-    - 
-    - 
-    - 
-  - - '7'
-    - beckyviebrock
-    - msviebrock@comcast.net
-    - "$2a$10$GA27DiGzD5riPR3R4Hi6b.J2KZdR4O7SQfQb44B/UYgc68YmYhW3e"
-    - '4153282625'
-    - '2015-10-12 21:30:04.326663'
-    - '2015-10-12 21:30:04.326663'
-    - Becky Viebrock
-    - Musician
+    - Director
     - 
     - 
     - 
