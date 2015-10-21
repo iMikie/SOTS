@@ -67,6 +67,8 @@ module SessionsHelper
     case options[:task]
       when :edit_profile
       when :delete_user
+        return true if c_user.admin
+
         id = options[:user_id]
         if id.to_i != c_user.id
           flash[:info] = "Not authorized"
