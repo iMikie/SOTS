@@ -16,15 +16,6 @@ class UsersController < ApplicationController
     #render show.html.erb
   end
 
-  # GET /users/new
-  # assumes views/users/new.html.erb
-  def new
-    #seed some admin level here, for now can't see the menu
-    @render_club_photo = true
-    session[:current_user_id] = nil
-    @user = User.new
-  end
-
   # GET /users/1/edit
   def edit
     return if !current_user_authorized? (options = {user_id: params[:id],
@@ -34,6 +25,16 @@ class UsersController < ApplicationController
     @user= User.find_by(id: params[:id])
 
   end
+  # GET /users/new
+  # assumes views/users/new.html.erb
+  def new
+    #seed some admin level here, for now can't see the menu
+    @render_club_photo = true
+    session[:current_user_id] = nil
+    @user = User.new
+  end
+
+
 
   # POST /users
   # POST /users.json
