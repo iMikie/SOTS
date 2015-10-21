@@ -28,6 +28,7 @@ module SessionsHelper
   end
 
   def current_user
+
     if (user_id = session[:current_user_id])
       @current_user ||= User.find_by(id: user_id) #how do we know @current_user is valid?
     elsif (user_id = cookies.signed[:current_user_id])
@@ -56,11 +57,17 @@ module SessionsHelper
   def current_user_authorized?(options)
 
     c_user = current_user
-    return false if !c_user
-    return true if c_user.admin
+
+    if !c_user
+      flash[:info] = "You must be a member"
+      redirect_to root_url
+      return false
+    end
 
     case options[:task]
       when :edit_profile
+      when :delete_user
+        return true if c_user.admin
         id = options[:user_id]
         if id.to_i != c_user.id
           flash[:info] = "Not authorized"
@@ -69,24 +76,12 @@ module SessionsHelper
         else
           return true
         end
-      when :delete_user
-        if c_user.admin
-          return true
-        else
-          flash[:info] = "Not authorized for killing people"
-          redirect_to root_url
-        end
       when :admin_task
         # !admin_user?
         flash[:info] = "That action require admin privileges"
         redirect_to root_url
       when :member_task
-        if logged_in?
-          return true
-        else
-          flash[:info] = "Must be logged in"
-          redirect_to root_url
-        end
+        return true #checked current_user above
     end
 
     false

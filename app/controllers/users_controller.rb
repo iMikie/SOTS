@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   # GET /users/1.json
   def show
     return if !current_user_authorized?(options = {:task => :member_task})
-    @user = User.find(params[:id])
+    #current_user_authorized? sets up redirect
+    @user = User.find_by(id: params[:id])
 
     #render show.html.erb
   end
@@ -28,6 +29,8 @@ class UsersController < ApplicationController
   def edit
     return if !current_user_authorized? (options = {user_id: params[:id],
                                                     :task => :edit_profile})
+    #current_user_authorized? sets up redirect
+
     @user= User.find_by(id: params[:id])
 
   end
@@ -57,43 +60,41 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
-    logger.debug "********************"
 
-    foo = session[:current_user_id]
-    if current_user_authorized? (options =
-                                     {user_id: params[:id],
-                                      :task => :edit_profile})
-
-      @user= current_user
-      respond_to do |format|
-        if @user.update(user_params)
-          format.html { redirect_to user_path, notice: 'User was successfully updated.' }
-          format.json { render :show, status: :ok, location: @user }
-        else
-          format.html { render :edit }
-          format.json { render json: @user.errors, status: :unprocessable_entity }
-        end
+    return if !current_user_authorized? (options =
+                                            {user_id: params[:id],
+                                             :task => :edit_profile})
+    @user= current_user
+    respond_to do |format|
+      if @user.update(user_params)
+        format.html { redirect_to user_path, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
+      else
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
       end
-    else
-      redirect_to @user
     end
+
   end
 
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    if (current_user_authorized? (options =
-                                     {user_id: params[:id],
-                                      :task => :delete_user}))
-      @user= User.find_by(params[:id])
-      @user.destroy
+    return if !current_user_authorized? (options =
+                                            {user_id: params[:id],
+                                             :task => :delete_user})
+    @user= User.find_by(id: params[:id])
+    @user.destroy
+
+    if current_user != @user
+      redirect_to users_path
+    else #kill session
       session[:current_user_id] = nil
       respond_to do |format|
-        format.html { redirect_to users_url, notice: 'User was successfully destroyed.' }
+        format.html { redirect_to roots_url, notice: 'User was successfully destroyed.' }
         format.json { head :no_content }
       end
-    else
-      redirect_to root_url
+
     end
   end
 
