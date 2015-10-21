@@ -39,6 +39,7 @@ module SessionsHelper
 
     end
   end
+
   # Returns true if the given user is the current user.
   def current_user?(user)
     user == current_user
@@ -48,42 +49,37 @@ module SessionsHelper
     user = current_user
     user && user.admin
   end
+
   #see that user is logged in and if a user_id is passed, make sure it's the id
   # #of the logged_in user}
 
   def current_user_authorized?(options)
 
+    c_user = current_user
+    return false if !c_user
+    return true if c_user.admin
+
     case options[:task]
       when :edit_profile
-
-        c_user = current_user
-        if c_user
-          return true if c_user.admin
-
-          id = options[:user_id]
-          if id.to_i != user.id
-            flash[:info] = "Not authorized"
-            redirect_to root_url
-            return false
-          else
-            return true
-          end
+        id = options[:user_id]
+        if id.to_i != c_user.id
+          flash[:info] = "Not authorized"
+          redirect_to root_url
+          return false
+        else
+          return true
         end
       when :delete_user
-        if current_user.admin
+        if c_user.admin
           return true
         else
           flash[:info] = "Not authorized for killing people"
           redirect_to root_url
         end
-
       when :admin_task
-        if admin_user?
-          return true
-        else
-          flash[:info] = "That action require admin privileges"
-          redirect_to root_url
-        end
+        # !admin_user?
+        flash[:info] = "That action require admin privileges"
+        redirect_to root_url
       when :member_task
         if logged_in?
           return true
@@ -92,6 +88,7 @@ module SessionsHelper
           redirect_to root_url
         end
     end
+
     false
   end
 

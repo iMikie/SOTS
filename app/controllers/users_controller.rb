@@ -60,9 +60,9 @@ class UsersController < ApplicationController
     logger.debug "********************"
 
     foo = session[:current_user_id]
-    if (current_user_authorized? (options =
+    if current_user_authorized? (options =
                                      {user_id: params[:id],
-                                      :task => :edit_profile}))
+                                      :task => :edit_profile})
 
       @user= current_user
       respond_to do |format|

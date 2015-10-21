@@ -1,3 +1,4 @@
+
 <form id="user-edit-box" class="ui form <%= colorization %> segment raised <%= if @user.errors.any? then
                                                                                  'error'
                                                                                end %> "
@@ -12,7 +13,7 @@
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
 
   <% if hidden_method_tag %>
-    <input type="hidden" name="_method" value="patch">
+    <input type="hidden" name="_method" value= <%= hidden_method_tag %>>
   <% end %>
 
   <div class="two fields">
