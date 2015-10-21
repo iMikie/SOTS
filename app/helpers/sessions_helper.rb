@@ -67,7 +67,6 @@ module SessionsHelper
     case options[:task]
       when :edit_profile
       when :delete_user
-        return true if c_user.admin
         id = options[:user_id]
         if id.to_i != c_user.id
           flash[:info] = "Not authorized"
@@ -77,9 +76,12 @@ module SessionsHelper
           return true
         end
       when :admin_task
-        # !admin_user?
-        flash[:info] = "That action require admin privileges"
-        redirect_to root_url
+        if c_user.admin
+          return true
+        else
+          flash[:info] = "That action require admin privileges"
+          redirect_to root_url
+        end
       when :member_task
         return true #checked current_user above
     end
