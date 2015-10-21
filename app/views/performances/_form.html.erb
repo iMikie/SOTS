@@ -1,11 +1,13 @@
 <div class="ui container" id="user-edit-box">
 
   <form class="ui form segment raised <%= colorization %>
-  <%= if @performance.errors.any? then 'error' end %> "
+  <%= if @performance.errors.any? then
+                                                                 'error'
+      end %> "
         <% if @performance.title %>
         action="<%= performances_path %>/<%= @performance.id %>" accept-charset="UTF-8" method="post">
   <% else %>
-      action="<%= performances_path %>" accept-charset="UTF-8" method="post">
+  action="<%= performances_path %>" accept-charset="UTF-8" method="post">
   <% end %>
 
   <!--ERROR MESSAGE <DIV>-->
@@ -84,11 +86,11 @@
 
   <button class="ui labeled  icon button grey">
     <% if @performance.title %>
-      <a href=<%= performance_path %> >
+      <a href=<%= performance_path %>>
         Cancel
       </a>
     <% else %>
-      <a href=<%= performances_path %> >
+      <a href=<%= performances_path %>>
         Cancel
       </a>
     <% end %>
@@ -96,7 +98,6 @@
   </button>
 
   <% else %>
-
   <button class="ui labeled  icon button green">
     <a href=" <%= "#{edit_performance_path}" %> ">
       Edit
@@ -109,21 +110,30 @@
     Add Song
   </div>
 
+  <% if current_user.admin? %>
+  <button class="ui labeled right floated button icon button red">
+     <%= link_to "Delete", @Performance,
+                 method: :delete,
+                 data: {confirm: "You sure?"} %>
+    <i class="trash icon"></i>
+  </button>
+  <% end %>
 
   <% end %>
+
+
   </form>
 
-  <% if @performance.title %>
 
-    <form id="delete-performance" action="<%= performance_path %>" accept-charset="UTF-8" method="post" onsubmit="return confirm('Delete this performance?');">
-      <input type="hidden" name="_method" value="delete"/>
-      <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-      <button class="ui right floated button red icon labeled" type="submit" id="delete-button">
-        <i class="icon trash"></i>
-        Delete this Performance
-      </button>
-    </form>
-  <% end %>
+  <!--<form id="delete-performance" action="<#%= performance_path %>" accept-charset="UTF-8" method="post" onsubmit="return confirm('Delete this performance?');">-->
+  <!--<input type="hidden" name="_method" value="delete"/>-->
+  <!--<input name="authenticity_token" value="<#%= form_authenticity_token %>" type="hidden">-->
+  <!-- -->
+  <!--<button class="ui right floated button red icon labeled" type="submit" id="delete-button">-->
+  <!--<i class="icon trash"></i>-->
+  <!--Delete this Performance-->
+  <!--</button>-->
+  <!--</form>-->
 </div>
 
 <div class="ui modal" id="add-song">
@@ -204,18 +214,13 @@
                     Arranger
                   </h4>
                 </div>
-                <!--<div id="thin" class="one column row thin">-->
-                <!--<div class="column">-->
-                <!--<div class="ui divider"></div>-->
-                <!--</div>-->
-                <!--</div>-->
               </div>
             </div>
 
             <div class="ui left aligned three column grid" id="returned-songs">
 
               <p>some songs here</p>
-<!--look in performances.js, I had to do the modal in javascript-->
+              <!--look in performances.js, I had to do the modal in javascript-->
             </div>
           </div>
         </div>

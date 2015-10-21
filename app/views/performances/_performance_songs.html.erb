@@ -20,16 +20,25 @@
             </div>
           </div>
 
+          <% if current_user.admin? %>
+            <button class="ui small button red">
+              <i class="trash icon"></i>
 
-          <form id="delete-performance-song" action="/performances/<%= @performance.id %>/songs/<%= ps.id %>/delete" accept-charset="UTF-8" method="post" onsubmit="return confirm('Delete song from performance?');">
-                  <input type="hidden" name="_method" value="delete" />
-            <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-
-            <button  class="ui button grey icon labeled"  type="submit">
-              <i class="icon trash"></i>
-              Delete
+              <%= link_to "Delete",
+                    "/performances/" + @performance.id.to_s + "/songs/" + ps.id.to_s + "/delete",
+                    method: :delete,
+                    data: {confirm: "You sure?"} %>
             </button>
-          </form>
+          <% end %>
+
+          <!--<form id="delete-performance-song" action="/performances/<#%= @performance.id %>/songs/<#%= ps.id %>/delete" accept-charset="UTF-8" method="post" onsubmit="return confirm('Delete song from performance?');">-->
+                  <!--<input type="hidden" name="_method" value="delete" />-->
+            <!--<input name="authenticity_token" value="<#%= form_authenticity_token %>" type="hidden">-->
+            <!--<button  class="ui button grey icon labeled"  type="submit">-->
+              <!--<i class="icon trash"></i>-->
+              <!--Delete-->
+            <!--</button>-->
+          <!--</form>-->
         </div>
       </div>
     <% end %>

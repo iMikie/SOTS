@@ -28,7 +28,7 @@ class User < ActiveRecord::Base
   # Remembers a user in the database for use in persistent sessions.
   # We create a token and store an encrypted version in the db
   # Then we store the user's encrypted id and unencrypted token  as a browser cookie
-  def remember_digest
+  def remember
     self.remember_token = User.new_token
     update_attribute(:remember_digest, User.digest(remember_token)) #this is self.remember_token
   end

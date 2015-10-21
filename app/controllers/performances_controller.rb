@@ -1,11 +1,11 @@
 class PerformancesController < ApplicationController
-  before_filter :authorize_user
 
   before_action :set_performance, only: [:show, :edit, :update, :destroy]
 
   # GET /performances
   # GET /performances.json
   def index
+    return if !current_user_authorized?(options = {:task => :member_task})
 
     @performances = Performance.all
   end
@@ -13,6 +13,7 @@ class PerformancesController < ApplicationController
   # GET /performances/1
   # GET /performances/1.json
   def show
+    return if !current_user_authorized?(options = {:task => :member_task})
     id = params[:id]
     @performance = Performance.find(params[:id])
 
@@ -20,17 +21,20 @@ class PerformancesController < ApplicationController
 
   # GET /performances/new
   def new
+    return if !current_user_authorized?(options = {:task => :member_task})
     @performance = Performance.new
   end
 
   # GET /performances/1/edit
   def edit
+    return if !current_user_authorized?(options = {:task => :member_task})
     @performance = Performance.find(params[:id])
   end
 
   # POST /performances
   # POST /performances.json
   def create
+    return if !current_user_authorized?(options = {:task => :member_task})
     @performance = Performance.new(performance_params)
 
     respond_to do |format|
@@ -47,6 +51,7 @@ class PerformancesController < ApplicationController
   # PATCH/PUT /performances/1
   # PATCH/PUT /performances/1.json
   def update
+    return if !current_user_authorized?(options = {:task => :member_task})
     @performance = Performance.find(params[:id])
     respond_to do |format|
       if @performance.update(performance_params)
@@ -62,6 +67,7 @@ class PerformancesController < ApplicationController
   # DELETE /performances/1
   # DELETE /performances/1.json
   def destroy
+    return if !current_user_authorized?(options = {:task => :member_task})
     @performance.destroy
     respond_to do |format|
       format.html { redirect_to performances_url, notice: 'Performance was successfully destroyed.' }
@@ -70,6 +76,7 @@ class PerformancesController < ApplicationController
   end
 
   def add_song_to_performance
+    return if !current_user_authorized?(options = {:task => :member_task})
     song_id = params["song_id"].to_i
     song= Song.find(song_id)
 
@@ -81,6 +88,7 @@ class PerformancesController < ApplicationController
   end
 
   def delete_song_from_performance
+    return if !current_user_authorized?(options = {:task => :member_task})
     song_id = params["song_id"].to_i
     song= Song.find(song_id)
 

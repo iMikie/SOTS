@@ -1,9 +1,9 @@
 
-
+<% patch = '<input type="hidden" name="_method" value="patch">' %>
 <%= render partial: 'form',
            :locals => { readonly: "",
                         colorization: "blue inverted",
                         title: "Edit User Profile",
                         action_path: user_path,
                         method: "post",
-                        hidden_method_tag: '<input type="hidden" name="_method" value="patch" />'} %>
+                        hidden_method_tag: true } %>

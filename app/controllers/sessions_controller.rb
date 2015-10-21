@@ -8,22 +8,17 @@ class SessionsController < ApplicationController
 
   #POST login
   def create #creating session
-    username = params[:username]
-
-    user = User.where(username: (params[:username])).first
+    user = User.find_by(username: params[:username])
 
     # If the user exists AND the password entered is correct.
     #user.authenticate is created by the call to has_secure_password in the model
     if user && user.authenticate(params[:password])
-#      remember(user)
+      log_in user  # Save the user id inside the session, i.e. the browser cookie.
 
-      log_in(user)  # Save the user id inside the session, i.e. the browser cookie.
-              #This is how we keep the user
-              # logged in when they navigate around our website.
       if params[:remember_me] == 'on'
-        remember(user)
+        remember user
       else
-        forget(user)
+        forget user
       end
       respond_to do |format|
         format.html { redirect_to '/songs' }
@@ -45,7 +40,7 @@ class SessionsController < ApplicationController
     log_out
 
     respond_to do |format|
-      format.html { redirect_to '/login' }
+      format.html { redirect_to root_url }
       format.json { render json: 'So long for now' }
     end
 

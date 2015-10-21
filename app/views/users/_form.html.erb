@@ -1,15 +1,19 @@
-<form id="user-edit-box" class="ui form <%= colorization %> segment raised <%= if @user.errors.any? then 'error' end %> "
+<form id="user-edit-box" class="ui form <%= colorization %> segment raised <%= if @user.errors.any? then
+                                                                                 'error'
+                                                                               end %> "
       action=<%= action_path %>
-      accept-charset="UTF-8" method= <%= method %> >
+        accept-charset="UTF-8" method=<%= method %>>
 
 
   <!--ERROR MESSAGE <DIV>-->
   <%= render 'error_messages' %>
 
   <h3 class="ui dividing header"><%= title %></h3>
-  <% hidden_method_tag %>
-
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+
+  <% if hidden_method_tag %>
+    <input type="hidden" name="_method" value="patch">
+  <% end %>
 
   <div class="two fields">
     <div class="field">
@@ -73,7 +77,9 @@
       <input placeholder="415 555-1212" name="user[phone_number]" <%= readonly %> value="<%= @user.phone_number %>" type="text">
     </div>
     <div class="item" id="gravatar_150">
-      <%= if @user.email then gravatar_for(@user, 150) end %>
+      <%= if @user.email then
+            gravatar_for(@user, 150)
+          end %>
     </div>
   </div>
 
@@ -102,17 +108,29 @@
       <i class="edit icon"></i>
     </button>
     <button class="ui labeled  icon button violet">
-      <a href= "/users/change_password/<%= @user.id %>">
+      <a href="/users/change_password/<%= @user.id %>">
         Change Password
       </a>
       <i class="edit icon"></i>
     </button>
   <% else %>
-    <button class="ui labeled  icon button green">
-      <a href="<%= edit_user_path %> ">
-        Edit
-      </a>
-      <i class="edit icon"></i>
-    </button>
+    <% if current_user.admin? || current_user?(@user) %>
+
+      <button class="ui labeled  icon button green">
+        <a href="<%= edit_user_path %> ">
+          Edit
+        </a>
+        <i class="edit icon"></i>
+      </button>
+    <% end %>
+
+    <% if current_user.admin? && !current_user?(@user) %>
+      <button class="ui labeled  icon button red">
+         <%= link_to "Delete", @user, method: :delete,
+                      data: {confirm: "You sure?"} %>
+        <i class="trash icon"></i>
+      </button>
+    <% end %>
+
   <% end %>
 </form>
