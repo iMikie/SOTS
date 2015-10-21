@@ -1,6 +1,8 @@
 <br>
 <br>
 <br>
+<% @performance.call_time = Time.now %>
+<% @performance.performance_time = Time.now %>
 
 <%= render partial: 'form',
            :locals => { readonly: "", colorization: "blue", title: "New Performance"}

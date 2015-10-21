@@ -43,6 +43,11 @@ module SessionsHelper
   def current_user?(user)
     user == current_user
   end
+
+  def admin_user?
+    user = current_user
+    user && user.admin
+  end
   #see that user is logged in and if a user_id is passed, make sure it's the id
   # #of the logged_in user}
 
@@ -69,6 +74,14 @@ module SessionsHelper
           return true
         else
           flash[:info] = "Not authorized for killing people"
+          redirect_to root_url
+        end
+
+      when :admin_task
+        if admin_user?
+          return true
+        else
+          flash[:info] = "That action require admin privileges"
           redirect_to root_url
         end
       when :member_task

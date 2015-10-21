@@ -21,7 +21,7 @@ class PerformancesController < ApplicationController
 
   # GET /performances/new
   def new
-    return if !current_user_authorized?(options = {:task => :member_task})
+    return if !current_user_authorized?(options = {:task => :admin_task})
     @performance = Performance.new
   end
 
