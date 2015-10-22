@@ -65,7 +65,7 @@ module SessionsHelper
     end
 
     case options[:task]
-      when :edit_profile || :delete_user
+      when :edit_profile, :delete_user
 
         return true if c_user.admin
 
