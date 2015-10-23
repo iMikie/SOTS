@@ -102,8 +102,10 @@ class UsersController < ApplicationController
   #GET /users/change_password/1
   #goes through user#update
   def change_password
-    @user = authorize_user
-    # render change_password.html.erb
+    return if !current_user_authorized? (options =
+                                            {user_id: params[:id],
+                                             :task => :member_task})
+    @user = User.find_by(id: params[:id])
   end
 
   # This is handled by update

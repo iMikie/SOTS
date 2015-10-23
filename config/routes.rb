@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-  get '/password_resets/new' => 'password_resets#new'
-  post '/password_resets' => 'password_resets#create'
-  get '/password_resets/:id/edit' => 'password_resets#edit'
+  # get '/password_resets/new' => 'password_resets#new'
+  # post '/password_resets' => 'password_resets#create'
+  # get '/password_resets/:id/edit' => 'password_resets#edit'
+  # get '/password_reset' => 'password_reset'
 
   # You can have the root of your site routed with "root"
   root 'welcome#index'
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   resources :users
   resources :songs
   resources :performances
+  resources :password_resets, only: [:new, :create, :edit, :update]
   get '/login' => 'sessions#login'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
