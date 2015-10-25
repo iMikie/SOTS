@@ -2,10 +2,9 @@ class SongsController < ApplicationController
 
 # GET /songs
   def index
-    return if !current_user_authorized?(options = {:task => :member_task})
-
-    else
-      @songs = @songs ||= Song.all
+   return if !current_user_authorized?(options = {:task => :member_task})
+    #does the redirect internally
+    @songs = @songs ||= Song.all
 
     end
 
