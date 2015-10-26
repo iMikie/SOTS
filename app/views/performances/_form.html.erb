@@ -84,7 +84,7 @@
     Submit
   </button>
 
-  <button class="ui labeled  icon button grey">
+  <div class="ui labeled  icon button grey">
     <% if @performance.title %>
       <a href=<%= performance_path %>>
         Cancel
@@ -95,15 +95,15 @@
       </a>
     <% end %>
     <i class="edit icon"></i>
-  </button>
+  </div>
 
   <% else %>
-  <button class="ui labeled  icon button green">
+  <div class="ui labeled  icon button green">
     <a href=" <%= "#{edit_performance_path}" %> ">
       Edit
     </a>
     <i class="edit icon"></i>
-  </button>
+  </div>
 
   <div class="ui labeled icon button blue" id="add-song-btn">
     <i class="music icon"></i>
@@ -111,12 +111,12 @@
   </div>
 
   <% if current_user.admin? %>
-  <button class="ui labeled right floated button icon button red">
+  <div class="ui labeled right floated button icon button red">
      <%= link_to "Delete", @Performance,
                  method: :delete,
                  data: {confirm: "You sure?"} %>
     <i class="trash icon"></i>
-  </button>
+  </div>
   <% end %>
 
   <% end %>

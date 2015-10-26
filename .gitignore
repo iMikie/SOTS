@@ -16,3 +16,4 @@
 # Ignore application configuration for security
 /config/application.yml
 /test
+/prototypes

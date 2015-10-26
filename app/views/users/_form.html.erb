@@ -102,35 +102,35 @@
       <i class="icon edit"></i>
       Submit
     </button>
-    <button class="ui labeled  icon button grey">
+    <div class="ui labeled  icon button grey">
       <a href="/users/<%= @user.id %>">
         Cancel
       </a>
       <i class="edit icon"></i>
-    </button>
-    <button class="ui labeled  icon button violet">
+    </div>
+    <div class="ui labeled  icon button violet">
       <a href="/users/change_password/<%= @user.id %>">
         Change Password
       </a>
       <i class="edit icon"></i>
-    </button>
+    </div>
   <% else %>
     <% if current_user.admin? || current_user?(@user) %>
 
-      <button class="ui labeled  icon button green">
+      <div class="ui labeled  icon button green">
         <a href="<%= edit_user_path %> ">
           Edit
         </a>
         <i class="edit icon"></i>
-      </button>
+      </div>
     <% end %>
 
     <% if current_user.admin? && !current_user?(@user) %>
-      <button class="ui labeled  icon button red">
+      <div class="ui labeled  icon button red">
          <%= link_to "Delete", @user, method: :delete,
                       data: {confirm: "You sure?"} %>
         <i class="trash icon"></i>
-      </button>
+      </div>
     <% end %>
 
   <% end %>

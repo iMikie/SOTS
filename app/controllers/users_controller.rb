@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.json
   def index
+    return if !current_user_authorized?(options = {:task => :member_task})
+
     @users = User.all
   end
 
