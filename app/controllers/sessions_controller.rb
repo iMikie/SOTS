@@ -21,7 +21,7 @@ class SessionsController < ApplicationController
         forget user
       end
       respond_to do |format|
-        format.html { redirect_to '/songs' }
+        format.html { render "welcome/index" }
         format.json { render json: ':message : "go card welcome"' }
       end
     else
