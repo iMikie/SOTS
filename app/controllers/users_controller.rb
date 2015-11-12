@@ -68,6 +68,7 @@ class UsersController < ApplicationController
                                             {user_id: params[:id],
                                              :task => :edit_profile})
     @user= current_user
+    @user= User.find(params[:id])
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to user_path, notice: 'User was successfully updated.' }
@@ -123,6 +124,7 @@ class UsersController < ApplicationController
   # Never trust parameters from the scary internet, only allow the white list through.
   def user_params
     params.require(:user).permit(:name, :voice, :username, :email, :phone_number, :password, :password_confirmation)
+    #returns the user hash
   end
 
 end
