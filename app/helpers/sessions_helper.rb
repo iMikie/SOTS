@@ -33,7 +33,7 @@ module SessionsHelper
       @current_user ||= User.find_by(id: user_id) #how do we know @current_user is valid?
     elsif (user_id = cookies.signed[:current_user_id])
       user = User.find_by(id: cookies.signed[:current_user_id])
-      if user && user.authenticated?(cookies[:remember_token]) #check encrypted token
+      if user && user.authenticated?(:remember, cookies[:remember_token]) #check encrypted token
         log_in user
         @current_user = user
       end
