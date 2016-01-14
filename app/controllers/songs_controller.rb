@@ -4,7 +4,7 @@ class SongsController < ApplicationController
   def index
    return if !current_user_authorized?(options = {:task => :member_task})
     #does the redirect internally
-    @songs = @songs ||= Song.all
+    @songs = @songs ||= Song.order(:title)
 
     end
 
@@ -13,7 +13,7 @@ class SongsController < ApplicationController
       return if !current_user_authorized?(options = {:task => :member_task})
 
       options_string, options_params = build_search
-      @songs = Song.where(options_string, *options_params)
+      @songs = Song.where(options_string, *options_params).order(:title)
 
       render "songs/index"
     end
