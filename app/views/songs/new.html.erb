@@ -84,7 +84,34 @@
         </div>
 
         <br>
+  <div class="song-edit-div mp3-pos">
+          <%= f.label :T1mp3_file, 'Select Tenor 1 MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :T2mp3_file %>
+        </div>
 
+        <br>
+          <div class="song-edit-div mp3-pos">
+          <%= f.label :B1mp3_file, 'Select Tenor 2 MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :mp3_file %>
+        </div>
+
+        <br>
+          <div class="song-edit-div mp3-pos">
+          <%= f.label :B2mp3_file, 'Select Baritone MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :mp3_file %>
+        </div>
+
+        <br>
+        <div class="song-edit-div mp3-pos">
+          <%= f.label :mp3_file, 'Select Bass MP3 (if any):', class: "song-label" %>
+          <br>
+          <%= f.file_field :mp3_file %>
+        </div>
+
+        <br>
         <div class="actions">
           <%= f.submit class: "green-button simple-button submit-song", value: 'Submit Song' %>
         </div>

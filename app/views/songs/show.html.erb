@@ -1,3 +1,4 @@
+<!-- both show and edit in this file.  the appropriate version is hidden/shown via songs.js-->
 <div id="song-container">
     <% if @song.errors.any? %>
         <div id="error_explanation">
@@ -145,16 +146,47 @@
                 </div>
 
                 <!--MP3-->
-                <div class="song-edit-div">
+                <div class="song-edit-div ">
                     <%= f.label :song_file, 'Select MP3 (if any):', class: "song-label" %>
                     <br>
                     <%= f.file_field :mp3_file %>
                 </div>
 
+                <!-- --------------------------------------------- -->
+                <!--t1 MP3-->
+                <div class="song-edit-div">
+                    <%= f.label :song_file, 'Select Tenor 1 MP3 (if any):', class: "song-label" %>
+                    <br>
+                    <%= f.file_field :t1mp3_file %>
+                </div>
+
+                <!--t2 MP3-->
+                <div class="song-edit-div">
+                    <%= f.label :song_file, 'Select Tenor 2 MP3 (if any):', class: "song-label" %>
+                    <br>
+                    <%= f.file_field :t2mp3_file %>
+                </div>
+
+                <!--b1 MP3-->
+                <div class="song-edit-div">
+                    <%= f.label :song_file, 'Select Baritone MP3 (if any):', class: "song-label" %>
+                    <br>
+                    <%= f.file_field :b1mp3_file %>
+                </div>
+
+                <!--b2 MP3-->
+                <div class="song-edit-div">
+                    <%= f.label :song_file, 'Select Bass MP3 (if any):', class: "song-label" %>
+                    <br>
+                    <%= f.file_field :b2mp3_file %>
+                </div>
+
+                <!-- --------------------------------------------- -->
+
                 <%= f.hidden_field :song_number %>
 
                 <div class="actions">
-                    <%= f.submit class: "green-button simple-button submit-song", value: 'Submit Song' %>
+                    <%= f.submit class: "green-button simple-button extra-top submit-song", value: 'Submit Song' %>
                 </div>
             <% end %>
         </div>
@@ -166,23 +198,52 @@
 
     </div>
     <!-- end of left-edit-column-->
+
     <div class="pdf-right-column">
         <!--<#% path = Rails.root.join("public", "SOTS_Songs", "#{@song.song_number}").to_s %>-->
+        <!-- --------------------------------------------- -->
         <% if url_exist?("http://" + @amazonAWS_path + ".mp3") %>
-
+        <div  class= "mp3-label" > Full MP3:</div>
             <!--<#% if File.exist?(path+".mp3") %>-->
             <audio src="<%= 'https://' + @amazonAWS_path %>.mp3" class="mp3-pos" type="audio/mpeg" controls>
                 Your browser does not support the audio element.
             </audio>
         <% end %>
+        <!-- --------------------------------------------- -->
+        <% if url_exist?("http://" + @amazonAWS_path + "T1.mp3") %>
+           <div  class= "mp3-label" > Tenor 1:</div>
+            <audio src="<%= 'https://' + @amazonAWS_path %>T1.mp3" class="mp3-pos" type="audio/mpeg" controls>
+                Your browser does not support the audio element.
+            </audio>
+
+        <% end %>
+        <% if url_exist?("http://" + @amazonAWS_path + "T2.mp3") %>
+           <div  class= "mp3-label" > Tenor 2:</div>
+            <audio src="<%= 'https://' + @amazonAWS_path %>T2.mp3" class="mp3-pos" type="audio/mpeg" controls>
+                Your browser does not support the audio element.
+            </audio>
+        <% end %>
+        <% if url_exist?("http://" + @amazonAWS_path + "B1.mp3") %>
+           <div  class= "mp3-label" > Baritone:</div>
+            <audio src="<%= 'https://' + @amazonAWS_path %>B1.mp3" class="mp3-pos" type="audio/mpeg" controls>
+                Your browser does not support the audio element.
+            </audio>
+        <% end %>
+        <% if url_exist?("http://" + @amazonAWS_path + "B2.mp3") %>
+           <div  class= "mp3-label" > Bass:</div>
+            <audio src="<%= 'https://' + @amazonAWS_path %>B2.mp3" class="mp3-pos" type="audio/mpeg" controls>
+                Your browser does not support the audio element.
+            </audio>
+        <% end %>
+
         <!--<#% if File.exist?(path+".pdf") %>-->
         <% if url_exist?("http://" + @amazonAWS_path + ".pdf") %>
             <iframe src="<%= "https://" +@amazonAWS_path %>.pdf" class="pdf">
             </iframe>
             <br>
 
- <a href="<%= "https://" +@amazonAWS_path %>.pdf" class="green-button simple-button"> Launch PDF </a>     <!--Using standard web syntax -->
-
+            <a href="<%= "https://" +@amazonAWS_path %>.pdf" class="green-button simple-button"> Launch
+                PDF </a> <!--Using standard web syntax -->
 
 
         <% end %>
