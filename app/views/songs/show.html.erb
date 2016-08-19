@@ -152,7 +152,6 @@
                     <%= f.file_field :mp3_file %>
                 </div>
 
-                <!-- --------------------------------------------- -->
                 <!--t1 MP3-->
                 <div class="song-edit-div">
                     <%= f.label :song_file, 'Select Tenor 1 MP3 (if any):', class: "song-label" %>
@@ -215,7 +214,6 @@
             <audio src="<%= 'https://' + @amazonAWS_path %>T1.mp3" class="mp3-pos" type="audio/mpeg" controls>
                 Your browser does not support the audio element.
             </audio>
-
         <% end %>
         <% if url_exist?("http://" + @amazonAWS_path + "T2.mp3") %>
            <div  class= "mp3-label" > Tenor 2:</div>
